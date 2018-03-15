@@ -1,0 +1,60 @@
+@mixin center($mc: true, $zero-mr: true) {
+
+    @if($mc){
+
+        @if($zero-mr){
+            margin: 0 auto;
+        }@else{
+            margin: {
+                left: auto;
+                right: auto;
+            }
+        }
+
+    }@else{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @if($zero-mr){
+            margin: 0;
+        }
+    }
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 850px;
+    background-color: white;
+    @include center;
+}
+
+.calendar-container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.month {
+    display: grid;
+    width: 700px;
+    grid-gap: 2px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr, repeat(4, 4fr);
+}
+
+.month h2 {
+    grid-column: span 5;
+}
+
+.day {
+    padding: 10px;
+    text-align: start;
+    background-color: lightgrey;
+    height: 100px;
+}
