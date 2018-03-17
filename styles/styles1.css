@@ -1,0 +1,84 @@
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.wrapper {
+  background-color: pink; }
+
+body {
+  background-color: #003e6b; }
+
+.head-nav {
+  background-color: #595353; }
+  .head-nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    list-style: none; }
+  .head-nav li a, .head-nav .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; }
+  .head-nav li a:hover, .head-nav .dropdown:hover .dropbtn {
+    background-color: red; }
+  .head-nav li.dropdown {
+    display: inline-block; }
+  .head-nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  .head-nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; }
+  .head-nav .dropdown-content a:hover {
+    background-color: #f1f1f1; }
+  .head-nav .dropdown:hover .dropdown-content {
+    display: block; }
+
+.main-nav {
+  background-color: #ffffff; }
+  .main-nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    list-style: none; }
+  .main-nav li a, .main-nav .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #870d0d; }
+  .main-nav li a:hover, .main-nav .dropdown:hover .dropbtn {
+    background-color: #ffffff; }
+  .main-nav li.dropdown {
+    display: inline-block; }
+  .main-nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  .main-nav .dropdown-content a {
+    color: #870d0d;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; }
+  .main-nav .dropdown-content a:hover {
+    background-color: #f1f1f1; }
+  .main-nav .dropdown:hover .dropdown-content {
+    display: block; }
+
+/*# sourceMappingURL=styles1.css.map */

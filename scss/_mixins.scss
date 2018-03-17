@@ -1,0 +1,8 @@
+@mixin flatten($list: false) {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    @if($list){
+        list-style: none;
+    }
+}
