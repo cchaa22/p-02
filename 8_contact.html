@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./styles/styles1.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div id="nav-placeholder"></div>
+            
+        </header>
+        <main>
+            <div class="container">
+                <h1>Contact</h1><br>
+                <p>please click <a href="https://www.bcit.ca/study/programs/699ccertt#entry">here</a> to start your application!</p>
+                <br>
+                <p>If you have any more questions or comments, please fill out this form.</p>
+                <form method="POST" action="#">
+                    <label for="FName">First Name: </label>
+                    <input name="FName" type="text">
+                    <label for="LName">Last Name: </label>
+                    <input name="LName" type="text">
+                    <label for="email">Email: </label>
+                    <input name="email" type="email">
+                    <label for="phoneNum">First Name: </label>
+                    <input name="phoneNum" type="tel"><br>
+                    <div>
+                        <label for="cStudent">Current Student:</label>
+                        <input name="identityCheckbox" id="cStudent" type="radio">
+                        <label for="pStudent">Prospective Student:</label>
+                        <input name="identityCheckbox" id="pStudent" type="radio">
+                        <label for="instructor">Instructor:</label>
+                        <input name="identityCheckbox" id="instructor" type="radio">
+                    </div><br>
+                    <label for="comments">Comments:</label>
+                    <input name="comments" type="text">
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

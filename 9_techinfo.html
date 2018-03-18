@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tech Info</title>
+    <link rel="stylesheet" href="./styles/styles1.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div id="nav-placeholder"></div>
+            
+        </header>
+        <main>
+            <div class="container">
+                <h1>Tech Info</h1><br>
+                <section>
+                    <h2>Software Requirements</h2>
+                    <ul>
+                        <li>Visual Studio 2017</li>
+                        <li>Microsoft SQL Server</li>
+                        <li>Microsoft Word</li>
+                        <li>Android Studio</li>
+                        <li>Xcode (to be downloaded on the provided mac mini)</li>
+                        <li>Node Package Manager</li>
+                        <li>Postman</li>
+                    </ul>
+                    <p>Although it is not required, using a Windows system is highly recommended.</p>
+                </section>
+                <section>
+                    <h2>Hardware Requirements</h2>
+                    <ul>
+                        <li>A computer capable of running Windows 10 Pro (laptop recommended)</li>
+                        <li>A macbook mini (to be provided)</li>
+                        <li>A monitor</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Web Services Requirements</h2>
+                    <ul>
+                        <li>AWS</li>
+                        <li>AZURE Imagination Account</li>
+                        <li>Github student account</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Dev Enviroment SetUp Recommendations</h2>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Emmet extension </li>
+                        <li>Live Server extension</li>
+                        <li>Open in Browser extension</li>
+                        <li>Path Autocomplete extension</li>
+                        <li>SCSS IntelliSense extension</li>
+                        <li>C# extension</li>
+                        <li>PHP extension</li>
+                        <li>JS linter extension</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
