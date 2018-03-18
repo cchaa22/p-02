@@ -7,119 +7,29 @@
     <title>Welcome Page</title>
     <link rel="stylesheet" href="/styles/styles1.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- <style>
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-            }
-            
-            li {
-                float: left;
-            }
-            
-            li a, .dropbtn {
-                display: inline-block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            
-            li a:hover, .dropdown:hover .dropbtn {
-                background-color: red;
-            }
-            
-            li.dropdown {
-                display: inline-block;
-            }
-            
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #f9f9f9;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-            
-            .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
-            
-            .dropdown-content a:hover {background-color: #f1f1f1}
-            
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-            </style> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("navigation.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+});
+</script>
+
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <div class="nav-group top-nav">
-                <nav class="head-nav">
-                <ul>
-                    <li><a href="./4_staff.html">Faculty</a></li>
-                    <li><a href="./3_students.html">Student</a></li>
-                    <li><a href="https://learn.bcit.ca/">D2L</a></li>
-                    <li><a href="./8_contact.html">Contact</a></li>
-                </ul>
-                <form class="search-form">
-                    <input type="text" placeholder="Search">
-                    <button>Search</button>
-                </form>
-            </nav>
-            </div>
-            <div class="nav-group bottom-nav">
-                    <nav class="main-nav">
-                            <ul>
-                                
-                                <li class="dropdown">
-                                        <a href="javascript:void(0)" class="dropbtn">Admission</a>
-                                        <div class="dropdown-content">
-                                                <a href="./1_welcome.html">Program Overview</a>
-                                                <a href="#">Apply</a>
-                                </li>
-                                <li class="dropdown">
-                                        <a href="javascript:void(0)" class="dropbtn">Program</a>
-                                        <div class="dropdown-content">
-                                                <a href="#">Schedule</a>
-                                                <a href="./7_coursesummary.html">Courses Summary Page</a>
-                                </li>
-                                <li class="dropdown">
-                                        <a href="javascript:void(0)" class="dropbtn">Resources</a>
-                                        <div class="dropdown-content">
-                                                <a href="./5_eresources.html">E-Resources</a>
-                                                <a href="https://www.bcit.ca/library/">Library</a>
-                                                <a href="https://www.bcit.ca/sustainability/">Sustainability</a>
-                                </li>
-                                <li class="dropdown">
-                                        <a href="javascript:void(0)" class="dropbtn">Tools</a>
-                                        <div class="dropdown-content">
-                                                <a href="./9_techinfo.html">Technical Information Page</a>
-                                                <a href="https://www.bcit.ca/its/services/">IT Services</a>
-                                                <a href="https://www.bcit.ca/its/software/">Software Access</a>
-                                </li>
-
-                            </ul>
-                        </nav>
-            </div>
+            <div id="nav-placeholder"></div>
             
         </header>
         <main>
             <div class="banner">
-
+                <br><p>HERO SLIDER</p><br>
             </div>
 
             <div class="gallery">
-                <section>
+                <section class="features">
                     <article>
                         <img>
                         <h3>High-Tech Professional Program</h3>
@@ -136,8 +46,39 @@
                     </article>
                 </section>
             </div>
+            <div>
+                <section class="events">
+                        <article>
+                                <img>
+                                <h3>Career Services</h3>
+                            </article>
+                            <article>
+                                    <img>
+                                <h3>BCIT News</h3>
+                            </article>
+                            <article>
+                                    <img>
+                                <h3>
+                                    Graduating & Jobs
+                                </h3>
+                            </article>
+                </section>
+            </div>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="grid-footer">
+                <nav class="footer-nav">
+                        <ul>
+                                <li><a href="#0">Contact</a></li>
+                                <li><a href="#0">FAQ</a></li>
+                                <li><a href="#0">Accessibility</a></li>
+                                <li><a href="#0">Privacy</a></li>
+                                <li><a href="#0">Legal</a></li>
+                            </ul>
+                </nav>
+            </div>
+            <p class="footer-intro">&copy; 2018 British Columbia Institute of Technology</p>
+        </footer>
     </div>
 </body>
 </html>

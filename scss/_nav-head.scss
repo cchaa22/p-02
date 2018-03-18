@@ -2,12 +2,14 @@
     background-color: $top-nav-color;
     display: flex;
     
+    
 
     ul {
         list-style-type: none;
         display: flex;
         padding: 0;
-        text-align: center;
+        
+        
         @include flatten(true);
     }
 
@@ -48,5 +50,9 @@
     
     .dropdown:hover .dropdown-content {
         display: block;
+    }
+
+    .search-form{
+        display: flex;
     }
 }
