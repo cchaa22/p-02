@@ -1,0 +1,43 @@
+body {
+  background-color: lightblue;
+  display: flex;
+  text-align: center; }
+
+.wrapper {
+  width: 1000px;
+  background-color: white;
+  margin: 0 auto; }
+
+.calendar-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-left: 15px;
+  margin-right: 15px; }
+
+.month {
+  display: flex;
+  flex-direction: column;
+  background-color: tomato;
+  text-align: left;
+  margin-top: 15px; }
+  .month h2 {
+    display: none; }
+  .month h1 {
+    padding-left: 15px; }
+
+.day {
+  padding: 15px 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: lightgrey; }
+
+.empty-month-start {
+  display: none; }
+
+.instructor {
+  color: #1f86a8;
+  text-align: right; }
+
+/*# sourceMappingURL=scheduleList.css.map */

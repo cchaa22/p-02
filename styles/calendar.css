@@ -1,0 +1,41 @@
+body {
+  background-color: lightblue;
+  display: flex;
+  text-align: center; }
+
+.wrapper {
+  max-width: 1000px;
+  background-color: white;
+  margin: 0 auto; }
+
+.calendar-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column; }
+
+.month {
+  display: grid;
+  width: 900px;
+  padding: 15px;
+  grid-gap: 2px;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 40px;
+  background-color: tomato; }
+  .month h1 {
+    grid-column: span 5; }
+
+.day {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: start;
+  background-color: lightgrey; }
+
+.day-of-week {
+  display: none; }
+
+.instructor {
+  color: #1f86a8; }
+
+/*# sourceMappingURL=calendar.css.map */
