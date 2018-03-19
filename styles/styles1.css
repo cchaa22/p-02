@@ -1,70 +1,178 @@
-/*
-Error: Invalid CSS after "...ee8adfc599db370": expected "{", was ""
-        on line 33 of scss/_container.scss
-        from line 23 of scss/styles1.scss
+html {
+  box-sizing: border-box; }
 
-28: 
-29: }
-30: 
-31: 
-32: >>>>>>> a3b34a0ace492e603b84814cdee8adfc599db370
+*, *:before, *:after {
+  box-sizing: inherit; }
 
-Backtrace:
-scss/_container.scss:33
-scss/styles1.scss:23
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:677:in `block'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:321:in `to_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...ee8adfc599db370\": expected \"{\", was \"\"\A         on line 33 of scss/_container.scss\A         from line 23 of scss/styles1.scss\A \A 28: \A 29: }\A 30: \A 31: \A 32: >>>>>>> a3b34a0ace492e603b84814cdee8adfc599db370"; }
+img {
+  max-width: 100%;
+  height: auto; }
+
+body {
+  margin: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-weight: lighter; }
+
+h2 {
+  font-family: 'Francois One', sans-serif;
+  font-weight: bolder; }
+
+.wrapper {
+  background-color: #ffffff;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+body {
+  background-color: #ffffff; }
+
+.schedule-body {
+  display: flex;
+  text-align: center; }
+
+.banner {
+  background-color: #870d0d;
+  color: #fff; }
+  .banner p {
+    margin: 0; }
+
+.head-nav {
+  background-color: #30393a;
+  display: flex; }
+  .head-nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    list-style: none; }
+  .head-nav li a, .head-nav .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; }
+  .head-nav li a:hover, .head-nav .dropdown:hover .dropbtn {
+    background-color: red; }
+  .head-nav li.dropdown {
+    display: inline-block; }
+  .head-nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  .head-nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; }
+  .head-nav .dropdown-content a:hover {
+    background-color: #f1f1f1; }
+  .head-nav .dropdown:hover .dropdown-content {
+    display: block; }
+  .head-nav .search-form {
+    display: flex; }
+
+.main-nav {
+  background-color: #ffffff; }
+  .main-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 4px #f3f3f1 solid;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    list-style: none; }
+  .main-nav li a, .main-nav .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #870d0d; }
+  .main-nav li a:hover, .main-nav .dropdown:hover .dropbtn {
+    background-color: #ffffff; }
+  .main-nav li.dropdown {
+    display: inline-block; }
+  .main-nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+  .main-nav .dropdown-content a {
+    color: #870d0d;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left; }
+  .main-nav .dropdown-content a:hover {
+    background-color: #f1f1f1; }
+  .main-nav .dropdown:hover .dropdown-content {
+    display: block; }
+
+footer {
+  background-color: #414141;
+  color: lightgray;
+  text-align: center;
+  padding: 1.875rem; }
+  footer .footer-nav ul {
+    display: flex; }
+  footer .footer-nav li {
+    list-style: none;
+    flex: 1; }
+  footer .footer-nav a {
+    display: block;
+    text-decoration: none;
+    padding: 0.9375rem;
+    font-size: 1.2em;
+    color: lightgray; }
+    footer .footer-nav a:hover, footer .footer-nav a:focus, footer .footer-nav a:active {
+      color: red; }
+    .footer-nav li:last-child a {
+      border-right: none; }
+  footer p {
+    border-top: 2px solid lightgray;
+    margin: 0; }
+
+.features {
+  background-color: #ffffff; }
+
+.features {
+  background-color: #ffffff; }
+
+.container {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  margin-bottom: 100px; }
+  .container ul li a {
+    text-decoration: none; }
+  .container p {
+    text-indent: 40px; }
+
+.calendar-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column; }
+
+.para p {
+  text-indent: 0px;
+  margin-left: 40px; }
+
+.list {
+  list-style: none; }
+
+.italic {
+  font-style: italic; }
+
+/*# sourceMappingURL=styles1.css.map */
