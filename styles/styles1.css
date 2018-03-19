@@ -30,6 +30,10 @@ h2 {
 body {
   background-color: #ffffff; }
 
+.schedule-body {
+  display: flex;
+  text-align: center; }
+
 .banner {
   background-color: #870d0d;
   color: #fff; }
@@ -155,6 +159,11 @@ footer {
     text-decoration: none; }
   .container p {
     text-indent: 40px; }
+
+.calendar-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column; }
 
 .para p {
   text-indent: 0px;
