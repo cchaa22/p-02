@@ -14,10 +14,10 @@ body {
 body {
   font-family: 'Open Sans', sans-serif; }
 
-h2 {
+h1 {
   font-weight: lighter; }
 
-h3 {
+h2 {
   font-family: 'Francois One', sans-serif;
   font-weight: bolder; }
 
@@ -147,6 +147,19 @@ footer {
   background-color: #ffffff; }
 
 .container {
-  margin: 100px; }
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  margin-bottom: 100px; }
+  .container ul li a {
+    text-decoration: none; }
+  .container p {
+    text-indent: 40px; }
+
+.list {
+  list-style: none; }
+
+.italic {
+  font-style: italic; }
 
 /*# sourceMappingURL=styles1.css.map */
