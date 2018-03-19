@@ -14,6 +14,9 @@
 $.get("navigation.html", function(data){
     $("#nav-placeholder").replaceWith(data);
 });
+$.get("navigation-footer.html", function(data){
+    $("#nav-foot-placeholder").replaceWith(data);
+});
 </script>
 </head>
 <body>
@@ -24,68 +27,140 @@ $.get("navigation.html", function(data){
             </header>
         <main>
             <div class="container">
-                <h2>Program Overview Page</h2>
-                <h3>Current Students Enrolled for the Year 2017-2018</h3>
+                <h1>Program Overview Page</h1>
                 <section>
                     <article>
-                            <h3>General Program Overview</h3>
-                            <p>Software Systems Developer (SSD) Program is...</p>
-                            <p>The Software Systems Developer (SSD) program (Web Programmer option) is an eight month, 
-                                full-time business application development program offered by BCIT's School of Computing 
-                                and Academic Studies, within the HTP department at the downtown Vancouver campus.</p>
-                            <p>It prepares individuals for high-demand careers in the technical areas of web application 
-                                development, programming, database and systems analysis. Students learn industry-ready 
-                                skills through extensive hands-on practice in current scripting and coding techniques, 
-                                object-oriented architecture patterns, application security and scalability, 
-                                developer tools, and platforms for building complete web-based business applications 
-                                from scratch. 
-                            </p>
-                            <p> Graduates of this certificate program may apply for acceptance into the BCIT 
-                                Bachelor of Technology in Computer Systems (additional prerequisites are required).                     
-                                This program is delivered through classroom instruction, hands-on lab work and 
-                                individual and team projects.                                    
-                                While applicants are not required to have formal computer programming experience, 
-                                they need to have a solid understanding of object oriented programming as well as 
-                                possess sound logical and reasoning skills. Applicants with no knowledge are advised 
-                                to take a programming language course, such as introduction to object-oriented 
-                                programming, C#, or Java.</p>
+                            <h2>General Program Overview</h2>
+                            <div class="para">
+                                    <p>The Software Systems Developer (SSD) program (Web Programmer option) is an eight month, 
+                                            full-time business application development program offered by BCIT's School of Computing 
+                                            and Academic Studies, within the HTP department at the downtown Vancouver campus.</p>
+                                        <p>It prepares individuals for high-demand careers in the technical areas of web application 
+                                            development, programming, database and systems analysis. Students learn industry-ready 
+                                            skills through extensive hands-on practice in current scripting and coding techniques, 
+                                            object-oriented architecture patterns, application security and scalability, 
+                                            developer tools, and platforms for building complete web-based business applications 
+                                            from scratch. 
+                                        </p>
+                                        <p> Graduates of this certificate program may apply for acceptance into the BCIT 
+                                            Bachelor of Technology in Computer Systems (additional prerequisites are required).                     
+                                            This program is delivered through classroom instruction, hands-on lab work and 
+                                            individual and team projects.                                    
+                                        </p>
+                            </div>
+                           
+                        </article>         
+                </section><hr>
+                <section>
+                    <article>
+                            <h2>Entrance Requirements</h2>
+                            <div class="para">
+                                    <p>Applicants are not required to have formal
+                                            computer programming experience.
+                                            However, a fundamental knowledge in
+                                            object-oriented programming is an asset.
+                                            We are looking for applicants with sound
+                                            logical, reasoning skills, and an eagerness
+                                            to learn and keep on growing.
+                                        </p>
+                                        <p>Everyone is encouraged to apply.
+                                            Applicants with no knowledge are advised
+                                            to take a programming language course, such as
+                                            introduction to object-oreiented programming, C#,
+                                            or <a href="https://www.bcit.ca/study/courses/comp1409" id="link">Java</a>.
+                                        </p>
+                                        <p>Please contact <a href="https://www.bcit.ca/study/programs/699ccertt#contacts" id="link">us</a>
+                                            for more information.
+                                        </p>
+                                    </div>
+
                         </article>
-                        <hr>
-                        <article>
-                            <h3>Entrance Requirements</h3>
-                            <p>Applicants are not required to have formal
-                                computer programming experience.
-                                However, a fundamental knowledge in
-                                object-oriented programming is an asset.
-                                We are looking for applicants with sound
-                                logical, reasoning skills, and an eagerness
-                                to learn and keep on growing.
-                            </p>
-                            <p>Everyone is encouraged to apply.
-                                Applicants with no knowledge are advised
-                                to take a programming language course, such as
-                                introduction to object-oreiented programming, C#,
-                                or <a href="https://www.bcit.ca/study/courses/comp1409">Java</a>.
-                            </p>
-                            <p>Please contact the program coordinator
-                                for more information.
-                            </p>
-                        </article>
-                        <hr>
-                        <article>
-                            <h3>Program Start/End Dates</h3>
+                          
+                </section><hr>
+                <section>
+                    <article>
+                            <h2>Program Start/End Dates</h2>
                             <h4>Current Intake</h4>
+                            <ul>
+                                <li>
+                                    September 11, 2017 - May 25, 2018
+                                </li>
+                            </ul>
                             <h4>Next Intake</h4>
+                            <ul>
+                                <li>
+                                    September 10, 2018 - May 25, 2019
+                                </li>
+                                </ul>
                             <p></p>
                             <ul>
                         </article>
-                        <hr>
-                        <article>
-                            <h3>How to Apply</h3>
-                        </article>
+                </section><hr>
+                <section>
+                    <h2>How to Apply</h2>
+                    <ul>
+                        <li>NASP Network Administration with Security Professional</li>
+                        <li>OAT Office Administrator with Technology</li>
+                        <li>SSD Software Systems Developer</li>
+                        <li>TSP Technology Support Professional</li>
+                        <li>TWD Technical Web Designer</li>
+                    </ul>
+
+                    <article>
+                        <h4>Please send all admission requirements to our Downtown Campus at:</h4>
+                        <ul class="list">
+                            <li>High-Tech Professional Programs</li>
+                            <li>British Columbia Institute of Technology</li>
+                            <li>350 - 555 Seymour Street</li>
+                            <li>Vancouver, BC V6B 3H6</li>
+                        </ul>
+                        <ul class="list italic">
+                            <li>
+                                *Please note that successful candidates will be contacted for an interview and meeting the <br>
+                                program's minimum entrance requirements does not ensure admission as seats are limited <br>
+                                and therefore subject to availability.
+                            </li>
+                        </ul>
+                    </article>
+                    <br><article>
+                        <h3>Network Administration and Security Professional (NASP)</h3>
+                        <ul>                     
+                            <li>Completed <a href="https://www.bcit.ca/files/cas/htp/pdf/nasp_personal.pdf">NASP Personal Information [PDF]</a> application form</li>
+                            <li>Current Resume</li>
+                            <li>Official high school or post-secondary transcript</li>
+                            <li>Proof of English 12 (C+ or better) <strong>-or-</strong> <a href="https://www.bcit.ca/admission/english.shtml">English Language Equivalent</a></li>
+                            <li>One year of IT related work experience - or - one year of related post secondary education</li>
+                        </ul>
+                        <ul class="list">
+                            <li>
+                                    Individuals without current IT experience are strongly encouraged to complete at least <br>
+                                    one of NASP's required industry certifications to increase chances of a successful application
+                                    <br>Applicants may be subject to a selection interview with faculty and/or administration
+                            </li>
+                        </ul>
+                    </article>
+                    <br><article>
+                        <h3>Office Administrator with Technology (OAT)</h3>
+                        <p>Please see the OAT <a href="https://www.bcit.ca/study/programs/6989cert#entry">Program Entry</a> page for information on how to apply.</p>
+                    </article>
+                    <br><article>
+                        <h3>Software Systems Developer (SSD)</h3>
+                        <p>Please see the SSD <a href="https://www.bcit.ca/study/programs/699ccertt#entry">Program Entry</a> page for information on how to apply.</p>
+                    </article>
+                    <br><article>
+                        <h3>Technology Support Professional (TSP)</h3>
+                        <p>Please see the TSP <a href="https://www.bcit.ca/study/programs/6985ipcert#entry">Program Entry</a> page for information on how to apply.</p>
+                    </article>
+                    <br><article>
+                        <h3>Technology Support Professional (TSP)</h3>
+                        <p>Please see the TWD <a href="https://www.bcit.ca/study/programs/6490cert#entry">Program Entry</a> page for information on how to apply.</p>
+                    </article>
                 </section>
             </div>
         </main>
+        <footer>
+                <div id="nav-foot-placeholder"></div>
+        </footer>
     </div>
 </body>
 </html>

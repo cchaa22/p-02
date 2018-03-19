@@ -1,9 +1,32 @@
 .container{
-    margin: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    ul li a{
+        text-decoration: none;
+    }
+
+    p{
+        text-indent: 40px;
+    }
+
+    
 }
 
+<<<<<<< HEAD
 .calendar-container{
     padding: 15px;
     display: flex;
     flex-direction: column;
 }
+=======
+.para p{
+    text-indent: 0px;
+    margin-left: 40px;
+
+}
+
+
+>>>>>>> a3b34a0ace492e603b84814cdee8adfc599db370
