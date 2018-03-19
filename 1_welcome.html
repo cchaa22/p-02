@@ -14,6 +14,9 @@
 $.get("navigation.html", function(data){
     $("#nav-placeholder").replaceWith(data);
 });
+$.get("navigation-footer.html", function(data){
+    $("#nav-foot-placeholder").replaceWith(data);
+});
 </script>
 
 </head>
@@ -66,17 +69,8 @@ $.get("navigation.html", function(data){
             </div>
         </main>
         <footer>
-            <div class="grid-footer">
-                <nav class="footer-nav">
-                        <ul>
-                                <li><a href="#0">Contact</a></li>
-                                <li><a href="#0">FAQ</a></li>
-                                <li><a href="#0">Accessibility</a></li>
-                                
-                            </ul>
-                </nav>
-            </div>
-            <p class="footer-intro">&copy; 2018 British Columbia Institute of Technology</p>
+            <div id="nav-foot-placeholder"></div>
+           
         </footer>
     </div>
 </body>
