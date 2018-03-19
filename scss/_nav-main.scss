@@ -5,6 +5,7 @@
         list-style-type: none;
         display: flex;
         justify-content: space-evenly;
+        border-bottom: 3px $main-nav-border-bottom-color solid;
 
         @include flatten(true);
 
