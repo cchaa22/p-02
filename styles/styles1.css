@@ -14,6 +14,13 @@ body {
 body {
   font-family: 'Open Sans', sans-serif; }
 
+h2 {
+  font-weight: lighter; }
+
+h3 {
+  font-family: 'Francois One', sans-serif;
+  font-weight: bolder; }
+
 .wrapper {
   background-color: #ffffff;
   max-width: 1920px;
@@ -76,7 +83,7 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 3px #f3f3f1 solid;
+    border-bottom: 4px #f3f3f1 solid;
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -138,5 +145,8 @@ footer {
 
 .features {
   background-color: #ffffff; }
+
+.content {
+  margin: 100px; }
 
 /*# sourceMappingURL=styles1.css.map */
