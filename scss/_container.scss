@@ -1,3 +1,9 @@
 .container{
     margin: 100px;
 }
+
+.calendar-container{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}

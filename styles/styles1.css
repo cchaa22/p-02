@@ -30,6 +30,10 @@ h3 {
 body {
   background-color: #ffffff; }
 
+.schedule-body {
+  display: flex;
+  text-align: center; }
+
 .banner {
   background-color: #870d0d;
   color: #fff; }
@@ -148,5 +152,10 @@ footer {
 
 .container {
   margin: 100px; }
+
+.calendar-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column; }
 
 /*# sourceMappingURL=styles1.css.map */
