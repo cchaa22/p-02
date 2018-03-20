@@ -18,9 +18,10 @@ body {
 .month {
   display: flex;
   flex-direction: column;
-  background-color: tomato;
+  background-color: #003c71;
   text-align: left;
-  margin-top: 15px; }
+  margin-top: 15px;
+  padding: 15px; }
   .month h2 {
     display: none; }
   .month h1 {

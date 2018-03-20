@@ -4,7 +4,7 @@
   grid-gap: 2px;
   grid-template-columns: repeat(5, 1fr);
   margin-top: 40px;
-  background-color: #293352; }
+  background-color: #003c71; }
   .month h1 {
     grid-column: span 5; }
 

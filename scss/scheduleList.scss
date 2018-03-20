@@ -1,3 +1,5 @@
+@import 'variables';
+
 @mixin center($mc: true, $zero-mr: true) {
 
     @if($mc){
@@ -53,9 +55,10 @@ body {
 .month {
     display: flex;
     flex-direction: column;
-    background-color: tomato;
+    background-color: $calendar-panel-color;
     text-align: left;
     margin-top: 15px;
+    padding: 15px;
     h2 {
         display: none;
     }
