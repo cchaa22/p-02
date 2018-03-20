@@ -25,11 +25,14 @@
         
         function toggleScheduleView(){
             let styleEl = document.getElementById('styleElement')
+            let button = document.getElementById('calendar-toggle')
             if(calendarView){
                 styleEl.href = "./styles/scheduleList.css"
+                button.textContent = "Calendar View"
                 calendarView = false
             }else {
                 styleEl.href = "./styles/calendar.css"
+                button.textContent = "List View"
                 calendarView = true
             }
         }
@@ -45,7 +48,9 @@
 
         <!-- <div class="container"> -->
 
-            <button onclick="toggleScheduleView()">The Toggler!</button>
+        <div class="button-toggler">
+            <button id="calendar-toggle" onclick="toggleScheduleView()">List View</button>
+        </div>
 
             <div class="calendar-container">
                 <div class="month">

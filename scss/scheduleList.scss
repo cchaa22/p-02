@@ -44,7 +44,6 @@ body {
 }
 
 .calendar-container {
-    padding: 15px;
     display: flex;
     flex-direction: column;
     @include center;
@@ -59,6 +58,7 @@ body {
     text-align: left;
     margin-top: 15px;
     padding: 15px;
+    border-radius: 10px;
     h2 {
         display: none;
     }
@@ -68,10 +68,11 @@ body {
 }
 
 .day {
-    padding: 15px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: lightgrey;
+    background-color: lightgrey;   
 }
 
 .empty-month-start {
@@ -81,4 +82,21 @@ body {
 .instructor {
     color: rgb(31, 134, 168);
     text-align: right;
+}
+
+.button-toggler {
+    display: flex;
+    margin-left: 15px;
+    button{
+        background-color:  $calendar-panel-color; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 10px;   
+        outline: none;     
+    }
 }
