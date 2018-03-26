@@ -33,6 +33,8 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: lightgrey; }
+  .day:nth-child(even) {
+    background-color: white; }
 
 .empty-month-start {
   display: none; }
