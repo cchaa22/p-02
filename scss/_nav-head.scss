@@ -1,5 +1,4 @@
-.top-nav{
-    
+.top-nav{  
     background-color: $top-nav-color;
 }
 
@@ -11,8 +10,7 @@
     ul {
         list-style-type: none;
         display: flex;
-        padding: 0;
-        
+        padding: 0;   
         
         @include flatten(true);
     }
@@ -36,9 +34,6 @@
     
     li.dropdown {
         display: inline-block;
-    }
-    a{
-        text-align: center;
     }
     
     .dropdown-content {
@@ -73,6 +68,10 @@
 
     .search-box{
         height: 44px;
+        background-color: $search-box-color;
+        border: none;
+        font-size: 1.2rem;
+        padding-left: 14px;
     }
 
     .fa{
