@@ -37,7 +37,7 @@
     padding: 15px;
     grid-gap: 2px;
     grid-template-columns: repeat(5, 1fr);
-    margin-top: 40px;
+    margin-top: $margin;
     background-color: $calendar-panel-color;
     border-radius: 10px;
     h1 {
