@@ -180,7 +180,7 @@ footer {
   .container ul li a {
     text-decoration: none; }
   .container p {
-    text-indent: 40px; }
+    margin-left: 40px; }
 
 .calendar-container {
   margin-left: 15px;
@@ -212,5 +212,29 @@ table {
 
 main {
   flex: 1; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin-left: 40px;
+  margin-top: 40px; }
+
+.contact-input {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  max-width: 400px; }
+  .contact-input label {
+    min-width: 100px; }
+
+.radio {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .radio label {
+    min-width: 175px; }
+
+.comments {
+  min-height: 150px;
+  max-width: 400px; }
 
 /*# sourceMappingURL=styles1.css.map */

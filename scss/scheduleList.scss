@@ -72,7 +72,10 @@ body {
     padding-right: 15px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: lightgrey;   
+    background-color: lightgrey; 
+    &:nth-child(even){
+        background-color: lighten(lightgrey, 50);
+    }  
 }
 
 .empty-month-start {
