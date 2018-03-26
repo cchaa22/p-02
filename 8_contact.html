@@ -30,15 +30,24 @@ $.get("navigation.html", function(data){
                 <br>
                 <p>If you have any more questions or comments, please fill out this form.</p>
                 <form method="POST" action="#">
-                    <label for="FName">First Name: </label>
-                    <input name="FName" type="text">
-                    <label for="LName">Last Name: </label>
-                    <input name="LName" type="text">
-                    <label for="email">Email: </label>
-                    <input name="email" type="email">
-                    <label for="phoneNum">Phone: </label>
-                    <input name="phoneNum" type="tel"><br>
-                    <div>
+                    <div class="contact-input">
+                    <!-- <div class="contact-input"> -->
+                        <label for="FName">First Name: </label>
+                        <input name="FName" type="text">
+                    <!-- </div>
+                    <div class="contact-input"> -->
+                        <label for="LName">Last Name: </label>
+                        <input name="LName" type="text">
+                    <!-- </div>
+                    <div class="contact-input"> -->
+                        <label for="email">Email: </label>
+                        <input name="email" type="email">
+                    <!-- </div>
+                    <div class="contact-input"> -->
+                        <label for="phoneNum">Phone: </label>
+                        <input name="phoneNum" type="tel"><br>
+                    </div>
+                    <div class="radio">
                         <label for="cStudent">Current Student:</label>
                         <input name="identityCheckbox" id="cStudent" type="radio">
                         <label for="pStudent">Prospective Student:</label>
@@ -47,7 +56,7 @@ $.get("navigation.html", function(data){
                         <input name="identityCheckbox" id="instructor" type="radio">
                     </div><br>
                     <label for="comments">Comments:</label>
-                    <input name="comments" type="text">
+                    <input name="comments" class="comments" type="text">
                 </form>
             </div>
         </main>
