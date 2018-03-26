@@ -2,8 +2,8 @@ form {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    margin-left: 40px;
-    margin-top: 40px;
+    margin-left: $margin;
+    margin-top: $margin;
 }
 
 .contact-input {
