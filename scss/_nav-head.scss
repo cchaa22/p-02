@@ -35,9 +35,6 @@
     li.dropdown {
         display: inline-block;
     }
-    a{
-        text-align: center;
-    }
     
     .dropdown-content {
         display: none;
@@ -71,6 +68,10 @@
 
     .search-box{
         height: 44px;
+        background-color: $search-box-color;
+        border: none;
+        font-size: 1.2rem;
+        padding-left: 14px;
     }
 
     .fa{
