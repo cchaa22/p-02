@@ -1,5 +1,4 @@
-.top-nav{
-    
+.top-nav{  
     background-color: $top-nav-color;
 }
 
@@ -11,8 +10,7 @@
     ul {
         list-style-type: none;
         display: flex;
-        padding: 0;
-        
+        padding: 0;   
         
         @include flatten(true);
     }
