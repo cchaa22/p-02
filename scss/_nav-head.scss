@@ -1,9 +1,13 @@
-.head-nav{
+.top-nav{
+    
     background-color: $top-nav-color;
-    display: flex;
-    
-    
+}
 
+.head-nav{
+    display: flex;
+    justify-content: center;
+    position: relative;
+   
     ul {
         list-style-type: none;
         display: flex;
@@ -13,10 +17,15 @@
         @include flatten(true);
     }
 
+    li{
+        flex: 1;
+    }
+
     li a, .dropbtn {
         display: inline-block;
         color: white;
         text-align: center;
+        
         padding: 14px 16px;
         text-decoration: none;
     }
@@ -27,6 +36,9 @@
     
     li.dropdown {
         display: inline-block;
+    }
+    a{
+        text-align: center;
     }
     
     .dropdown-content {
@@ -53,6 +65,23 @@
     }
 
     .search-form{
-        display: flex;
+        flex: 1;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .search-box{
+        height: 44px;
+    }
+
+    .fa{
+        font-size: 1.2rem;
+        color: $search-icon;
+    }
+
+    .btn{
+        background-color: $btn-color;
+        border: none;
     }
 }

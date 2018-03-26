@@ -25,7 +25,10 @@ h2 {
   background-color: #ffffff;
   max-width: 1920px;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
 
 body {
   background-color: #ffffff; }
@@ -40,9 +43,13 @@ body {
   .banner p {
     margin: 0; }
 
+.top-nav {
+  background-color: #30393a; }
+
 .head-nav {
-  background-color: #30393a;
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  position: relative; }
   .head-nav ul {
     list-style-type: none;
     display: flex;
@@ -51,6 +58,8 @@ body {
     padding: 0;
     line-height: 1;
     list-style: none; }
+  .head-nav li {
+    flex: 1; }
   .head-nav li a, .head-nav .dropbtn {
     display: inline-block;
     color: white;
@@ -61,6 +70,8 @@ body {
     background-color: red; }
   .head-nav li.dropdown {
     display: inline-block; }
+  .head-nav a {
+    text-align: center; }
   .head-nav .dropdown-content {
     display: none;
     position: absolute;
@@ -79,7 +90,18 @@ body {
   .head-nav .dropdown:hover .dropdown-content {
     display: block; }
   .head-nav .search-form {
-    display: flex; }
+    flex: 1;
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .head-nav .search-box {
+    height: 44px; }
+  .head-nav .fa {
+    font-size: 1.2rem;
+    color: #ffffff; }
+  .head-nav .btn {
+    background-color: #30393a;
+    border: none; }
 
 .main-nav {
   background-color: #ffffff; }
@@ -187,5 +209,8 @@ table {
 .imgformat {
   width: 80px;
   height: 70px; }
+
+main {
+  flex: 1; }
 
 /*# sourceMappingURL=styles1.css.map */
