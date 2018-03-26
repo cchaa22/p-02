@@ -235,6 +235,7 @@ main {
 
 .comments {
   min-height: 150px;
-  max-width: 400px; }
+  max-width: 400px;
+  min-width: 300px; }
 
 /*# sourceMappingURL=styles1.css.map */
