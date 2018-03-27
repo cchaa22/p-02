@@ -6,11 +6,12 @@
     display: flex;
     justify-content: center;
     position: relative;
+    border-bottom: 6px solid #fff72b;
    
     ul {
         list-style-type: none;
         display: flex;
-        padding: 0;   
+        padding: 0;  
         
         @include flatten(true);
     }
@@ -29,7 +30,8 @@
     }
 
     li a:hover, .dropdown:hover .dropbtn {
-        background-color: red;
+        // background-color: $top-nav-hover-color;
+        border-top: 5px solid $top-nav-hover-color;
     }
     
     li.dropdown {
