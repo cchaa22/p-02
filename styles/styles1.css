@@ -221,10 +221,26 @@ main {
   max-width: 600px;
   margin-left: 40px;
   margin-top: 40px; }
+  .contact-form textarea {
+    margin-top: 0.75em; }
+  .contact-form button {
+    background-color: #003c71;
+    border: none;
+    color: white;
+    padding: 15px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 20px;
+    width: 100px; }
 
 .contact-input {
   display: grid;
   grid-template-columns: 1fr 200px;
+  grid-row-gap: 0.75em;
   max-width: 400px; }
   .contact-input label {
     min-width: 100px; }
@@ -236,7 +252,7 @@ main {
     min-width: 175px; }
 
 .comments {
-  min-height: 150px;
+  min-height: 120px;
   max-width: 400px;
   min-width: 300px; }
 

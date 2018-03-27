@@ -4,11 +4,29 @@
     max-width: 600px;
     margin-left: $margin;
     margin-top: $margin;
+    textarea {
+        margin-top: 0.75em;
+    }
+    button {
+        background-color:  $calendar-panel-color; 
+        border: none;
+        color: white;
+        padding: 15px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 10px;   
+        outline: none;  
+        margin-top: $margin / 2;
+        width: 100px;
+    }
 }
 
 .contact-input {
     display: grid;
     grid-template-columns: 1fr 200px;
+    grid-row-gap: 0.75em;
     max-width: 400px;
     label {
         min-width: 100px;
@@ -24,7 +42,7 @@
 }
 
 .comments {
-    min-height: 150px;
+    min-height: 120px;
     max-width: 400px;
     min-width: 300px;
 }
