@@ -106,23 +106,30 @@ body {
     background-color: #30393a;
     border: none; }
 
-.bottom-nav .logo {
-  position: relative;
-  z-index: 900;
-  height: 166px;
-  width: 153px;
-  margin-left: 40px;
+.bottom-nav {
+  height: 45px;
   display: flex;
-  align-items: center;
-  transition: all 0.3s ease; }
+  border-bottom: 4px #f3f3f1 solid; }
+  .bottom-nav .logo {
+    display: block;
+    position: relative;
+    z-index: 900;
+    height: 45px;
+    width: 83px;
+    margin-left: 40px;
+    flex: 0 0 83px;
+    transition: all 0.3s ease; }
+    .bottom-nav .logo img {
+      width: 100%;
+      height: 140%; }
 
 .main-nav {
+  flex: 1;
   background-color: #ffffff; }
   .main-nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 4px #f3f3f1 solid;
     margin: 0;
     padding: 0;
     line-height: 1;

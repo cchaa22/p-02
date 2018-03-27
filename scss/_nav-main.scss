@@ -30,7 +30,6 @@
         list-style-type: none;
         display: flex;
         justify-content: space-evenly;
-        //border-bottom: 4px $main-nav-border-bottom-color solid;
 
         @include flatten(true);
 
