@@ -1,13 +1,38 @@
 table {
     background-color: $bg-table-color;
+    border-radius: $border-radius-table;
     
-    th, td{
-        border: 2px solid white;
+    th, td {
+        border-bottom: 2px solid white;
+        // border-right: 2px solid white;
         padding: 20px;
+    }
+
+    tr:last-child td {
+        border-bottom: none;
     }
 }
 
 .imgformat {
-    width: 220px; 
+    width: 240px; 
     height: 70px;
+}
+
+.e-resource-table {
+    background-color: $bg-table-color;
+    color: $bcit-main-font-color;
+}
+
+.staff-table {
+    background-color: $bcit-main-blue-color;
+    color: $table-white-font-color;
+
+    thead{
+        color: $bcit-main-yellow-color;
+    }
+}
+
+.admin-table {
+    background-color: $bcit-main-yellow-color;
+    color:  $bcit-main-blue-color;
 }

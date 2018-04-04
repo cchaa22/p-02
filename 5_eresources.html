@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://code.jquery.com/jquery.min.js"></script>
-<script>
-$.get("navigation.html", function(data){
-    $("#nav-placeholder").replaceWith(data);
-});
-$.get("navigation-footer.html", function(data){
-    $("#nav-foot-placeholder").replaceWith(data);
-});
-</script>
+    
+    <script>
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    $.get("navigation-footer.html", function(data){
+        $("#nav-foot-placeholder").replaceWith(data);
+    });
+    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -31,7 +32,7 @@ $.get("navigation-footer.html", function(data){
                 <section>
                     <article>
                         <h2>Technical Resources</h2><br>
-                        <table>
+                        <table class="e-resource-table">
                                 <thead>
                                     <tr>
                                         <th>Logo</th>
@@ -97,7 +98,7 @@ $.get("navigation-footer.html", function(data){
                     </article><br><br><hr><br>
                     <article>
                         <h2>Text Editors</h2><br>
-                        <table>
+                        <table class="e-resource-table">
                                 <thead>
                                     <tr>
                                         <th>Logo</th>
@@ -156,7 +157,7 @@ $.get("navigation-footer.html", function(data){
                     </article><br><br><hr><br>
                     <article>
                         <h2>Image Editors</h2><br>
-                        <table>
+                        <table class="e-resource-table">
                                 <thead>
                                     <tr>
                                         <th>Logo</th>
@@ -189,7 +190,7 @@ $.get("navigation-footer.html", function(data){
                     </article><br><br><hr><br>
                     <article>
                         <h2>Blogs</h2><br>
-                        <table>
+                        <table class="e-resource-table">
                                 <thead>
                                     <tr>
                                         <th>Logo</th>

@@ -327,14 +327,31 @@ section {
   font-style: italic; }
 
 table {
-  background-color: #ededed; }
+  background-color: #ededed;
+  border-radius: 10px; }
   table th, table td {
-    border: 2px solid white;
+    border-bottom: 2px solid white;
     padding: 20px; }
+  table tr:last-child td {
+    border-bottom: none; }
 
 .imgformat {
-  width: 220px;
+  width: 240px;
   height: 70px; }
+
+.e-resource-table {
+  background-color: #ededed;
+  color: #003c79; }
+
+.staff-table {
+  background-color: #003c79;
+  color: #ffffff; }
+  .staff-table thead {
+    color: #fce80c; }
+
+.admin-table {
+  background-color: #fce80c;
+  color: #003c79; }
 
 main {
   flex: 1; }
