@@ -1,3 +1,9 @@
-.features{
-    background-color: $section-features-color;
+.events{
+    background-color: $section-events-color;
+
+    h1{
+        text-align: center;
+        color: $section-events-font-color;
+        font-size: 2rem;
+    }
 }
