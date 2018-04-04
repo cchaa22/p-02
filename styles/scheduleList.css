@@ -30,7 +30,7 @@ body {
     display: none; }
   .month h1 {
     padding-left: 15px; }
-  @media (max-width: 46.875em) {
+  @media (max-width: 50em) {
     .month h1 {
       font-size: 1.25em; } }
 
@@ -45,7 +45,7 @@ body {
   @media (max-width: 61.25em) {
     .day {
       font-size: 0.75em; } }
-  @media (max-width: 46.875em) {
+  @media (max-width: 50em) {
     .day {
       font-size: 0.5625em; } }
   @media (max-width: 35.625em) {
