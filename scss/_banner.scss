@@ -5,3 +5,22 @@
         margin: 0;
     }
 }
+
+
+.hero-slider {
+    position: relative;
+    
+    img { 
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+#adv-custom-pager {
+	left: 50%;
+	transform: translateX(-50%);
+	border: 1px solid white;
+	position: absolute;
+	top: 475px;
+	z-index: 999;
+}

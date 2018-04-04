@@ -22,7 +22,7 @@ footer{
         
 
         #{$link-hover-selector}{
-            color:red;
+            color:$footer-hover-color;
             $link-hover-selector: '&:hover, &:focus, &:active';
         }
 
