@@ -1,4 +1,4 @@
-.bottom-nav{
+.bottom-nav {
 
     height: 45px;
     display: flex;
@@ -22,7 +22,7 @@
     }
 }
 
-.main-nav{
+.main-nav {
     flex: 1;
     background-color: $main-nav-color;
 
@@ -68,7 +68,7 @@
         text-align: left;
     }
     
-    .dropdown-content a:hover {background-color: #f1f1f1}
+    .dropdown-content a:hover { background-color: #f1f1f1 }
     
     .dropdown:hover .dropdown-content {
         display: block;

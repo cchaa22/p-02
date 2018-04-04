@@ -30,3 +30,9 @@
 @function slash(){
   @return unquote("/");
 }
+
+// Function to generate aspect
+// ratio percentages
+@function rp($w, $h){
+    @return ($h / $w) * 100%;
+}
