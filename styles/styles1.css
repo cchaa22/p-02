@@ -233,6 +233,9 @@ table {
 main {
   flex: 1; }
 
+.greater-contact-area {
+  display: flex; }
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -257,15 +260,19 @@ main {
 
 .contact-input {
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 200px;
   grid-row-gap: 0.75em;
   max-width: 400px; }
   .contact-input label {
     min-width: 100px; }
 
+.contact-input-box {
+  display: flex; }
+
 .radio {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px; }
   .radio label {
     min-width: 175px; }
 

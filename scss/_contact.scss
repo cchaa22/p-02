@@ -1,3 +1,7 @@
+.greater-contact-area {
+    display: flex;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -25,7 +29,7 @@
 
 .contact-input {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 200px;
     grid-row-gap: 0.75em;
     max-width: 400px;
     label {
@@ -33,9 +37,14 @@
     }
 }
 
+.contact-input-box {
+    display: flex;
+}
+
 .radio {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: $margin;
     label {
         min-width: 175px;
     }

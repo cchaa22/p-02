@@ -26,33 +26,57 @@ $.get("navigation.html", function(data){
         <main>
             <div class="container">
                 <h1>Contact</h1><br>
-                <div id="messagingFromUs"></div>
                 <h4>Please click <a href="https://www.bcit.ca/study/programs/699ccertt#entry">here</a> to start your application!</h4>
                 <h4>If you have any more questions or comments . . .</h4>
-                <form class="contact-form" id="contact-form">
-                    <div class="contact-input">
-                        <label for="FName">First Name: </label>
-                        <input id="FName" type="text">
-                        <label for="LName">Last Name: </label>
-                        <input id="LName" type="text">
-                        <label for="email">Email: </label>
-                        <input id="email" type="text">
-                        <label for="phoneNum">Phone: </label>
-                        <input id="phoneNum" type="tel"><br>
-                    </div>
-                        
-                    <div class="radio">
-                        <label for="cStudent">Current Student:</label>
-                        <input name="identityCheckbox" id="cStudent" type="radio">
-                        <label for="pStudent">Prospective Student:</label>
-                        <input name="identityCheckbox" id="pStudent" type="radio">
-                        <label for="instructor">Instructor:</label>
-                        <input name="identityCheckbox" id="instructor" type="radio">
-                    </div><br>
-                    <label for="comments">Comments:</label>
-                    <textarea id="comments" name="comments" class="comments"></textarea>
-                    <button type='submit'>Submit!</button>
-                </form>
+                <div class="greater-contact-area">
+                    <form class="contact-form" id="contact-form">
+                        <div class="contact-input">
+                            <div class="contact-input-area">
+                                <div class="contact-input-box">
+                                    <label for="FName">First Name: </label>
+                                    <input id="FName" type="text">
+                                </div>
+                                <div id="first-name-input"></div>
+                            </div>
+                            <div class="contact-input-area">
+                                <div class="contact-input-box">
+                                    <label for="LName">Last Name: </label>
+                                    <input id="LName" type="text">
+                                </div>
+                                <div id="last-name-input"></div>
+                            </div>
+                            <div class="contact-input-area">
+                                <div class="contact-input-box">
+                                    <label for="email">Email: </label>
+                                    <input id="email" type="text">
+                                </div>
+                                <div id="email-input"></div>
+                            </div>
+                            <div class="contact-input-area">
+                                <div class="contact-input-box">
+                                    <label for="phoneNum">Phone: </label>
+                                    <input id="phoneNum" type="tel"><br>
+                                </div>
+                                <div id="phone-num-input"></div>
+                            </div>
+                        </div>
+                            
+                        <div class="radio" id="contact-radio">
+                            <label for="cStudent">Current Student:</label>
+                            <input name="identityCheckbox" id="cStudent" type="radio">
+                            <label for="pStudent">Prospective Student:</label>
+                            <input name="identityCheckbox" id="pStudent" type="radio">
+                            <label for="instructor">Instructor:</label>
+                            <input name="identityCheckbox" id="instructor" type="radio">
+                            <div id="contact-radio-input"></div>
+                        </div><br>
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" class="comments"></textarea>
+                        <div id="contact-comments-input"></div>
+                        <button type='submit'>Submit!</button>
+                    </form>
+                    <div id="contact-success-msg"></div>
+                </div>
             </div>
         </main>
     </div>
@@ -60,12 +84,51 @@ $.get("navigation.html", function(data){
         var form = document.getElementById('contact-form');
         
         form.addEventListener('submit', function(e){
-            validateContact(e);
+            validateContact(e)
         });
+
+        function clearInputs(){
+            errors = false
+            document.getElementById("FName").value = ""
+            document.getElementById("LName").value = ""
+            document.getElementById("email").value = ""
+            document.getElementById("phoneNum").value = ""
+            document.getElementById('comments').value = ""
+            //clear the radio checkboxes
+            let ele = document.getElementsByName("identityCheckbox")
+            for(var i=0;i<ele.length;i++)
+                ele[i].checked = false
+        }
+        
+        function clearErrorMsgs() {
+            //clear any error messages
+            document.getElementById("first-name-input").innerHTML = ""
+            document.getElementById("last-name-input").innerHTML = ""
+            document.getElementById("email-input").innerHTML = ""
+            document.getElementById("phone-num-input").innerHTML = ""
+            document.getElementById("contact-radio-input").innerHTML = ""
+            document.getElementById("contact-comments-input").innerHTML = ""
+            //clear the success message
+            document.getElementById("contact-success-msg").innerHTML = ""
+        }
+
+        function insertMessage(msg, locationIdName, color, fontSize){
+            let location = document.getElementById(locationIdName)
+            let messageFromUs = document.createElement('p')
+            messageFromUs.style.color = color
+            messageFromUs.style.fontSize = fontSize || "10px";
+            let message = document.createTextNode(msg)
+            messageFromUs.appendChild(message)
+            location.appendChild(messageFromUs)
+        }
+
+        function validatePhoneNum(testPhoneNum){
+            var phoneno = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/
+            return phoneno.test(testPhoneNum)
+        }
 
         function validateEmail(testEmail) {
             var rEx = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b/
-            alert(rEx.test(testEmail))
             return rEx.test(testEmail)
         }
 
@@ -73,49 +136,57 @@ $.get("navigation.html", function(data){
             var fInput = document.getElementById('FName').value
             var lName = document.getElementById('LName').value
             var contactEmail = document.getElementById('email').value
+            var phoneNum = document.getElementById('phoneNum').value
             var comments = document.getElementById('comments').value
             var cStudent = document.getElementById("cStudent").checked
             var pStudent = document.getElementById("pStudent").checked
             var teacher = document.getElementById("instructor").checked
             var messagingDiv = document.getElementById("messagingFromUs")
-            var errors = []
-            e.preventDefault();
+            errors = false
+            e.preventDefault()
             if(fInput == ""){
+                document.getElementById("first-name-input").innerHTML = ""
+                errors = true
                 let error = "Please fill in your first name."
-                errors.push(error)
+                insertMessage(error, "first-name-input", "red")
             }
             if(lName == ""){
-                let error = "please fill in your last name"
-                errors.push(error)
+                document.getElementById("last-name-input").innerHTML = ""
+                errors = true
+                let error = "Please fill in your last name."
+                insertMessage(error, "last-name-input", "red")
             }
             if(validateEmail(contactEmail) == false){
-                let error = "please enter a valid email address"
-                errors.push(error)
+                document.getElementById("email-input").innerHTML = ""
+                errors = true
+                let error = "Please enter a valid email address."
+                insertMessage(error, "email-input", "red")
+            }
+            if(validatePhoneNum(phoneNum) == false){
+                document.getElementById("phone-num-input").innerHTML = ""
+                errors = true
+                let error = "Please enter a valid phone number."
+                insertMessage(error, "phone-num-input", "red")
             }
             if(comments == ""){
-                let error = "please enter your comments"
-                errors.push(error)
+                document.getElementById("contact-comments-input").innerHTML = ""
+                errors = true
+                let error = "Please enter your comments."
+                insertMessage(error, "contact-comments-input", "red")
             }
             if(cStudent == false && pStudent == false && teacher == false){
-                let error = "Please tell us if you are a current/prospective student, or teacher"
-                errors.push(error)
+                document.getElementById("contact-radio-input").innerHTML = ""
+                errors = true
+                let error = "Please tell us if you are a current/prospective student, or teacher."
+                insertMessage(error, "contact-radio-input", "red")
             }
 
-            if(errors.length != 0){
-                for(i = 0; i < errors.length; i++){
-                    let messageFromUs = document.createElement('p')
-                    messageFromUs.style.color = "red"
-                    let message = document.createTextNode(errors[i])
-                    messageFromUs.appendChild(message)
-                    messagingDiv.appendChild(messageFromUs)
-                }
-            }else {
-                let messageFromUs = document.createElement('p')
-                messageFromUs.style.color = "blue"
-                let message = document.createTextNode('Thank you for your comments!')
-                messageFromUs.appendChild(message)
-                messagingDiv.appendChild(messageFromUs)
+            if(!errors){
+                clearErrorMsgs()
+                insertMessage('Thank you for your comments!', 
+                    "contact-success-msg", "blue", "20px")
             }
+            clearInputs()
         }
     </script>   
 </body>
