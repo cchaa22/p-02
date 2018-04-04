@@ -32,6 +32,9 @@ h2 {
 
 body {
   background-color: #ffffff; }
+  @media (max-width: 42.1875em) {
+    body h1 {
+      font-size: 1.25em; } }
 
 .schedule-body {
   display: flex;
@@ -253,6 +256,16 @@ section {
     text-decoration: none; }
   .container p {
     margin-left: 40px; }
+  @media (max-width: 50em) {
+    .container {
+      margin-left: 4.6875em; }
+      .container p {
+        margin-left: 1.25em; } }
+  @media (max-width: 42.1875em) {
+    .container {
+      margin-left: 1.25em; }
+      .container p {
+        margin-left: 0.625em; } }
 
 .calendar-container {
   margin-left: 15px;
@@ -386,5 +399,19 @@ main {
   .students-grid-container h3 {
     margin-left: 40px;
     color: #fce80c; }
+  @media (max-width: 50em) {
+    .students-grid-container h3 {
+      font-size: 1em;
+      margin-left: 0.3125em;
+      padding: 0.3125em; }
+    .students-grid-container p {
+      font-size: 0.75em;
+      padding: 0.3125em; } }
+  @media (max-width: 42.1875em) {
+    .students-grid-container {
+      padding: 5px;
+      grid-gap: 0;
+      border-radius: 10px;
+      font-size: 0.75em; } }
 
 /*# sourceMappingURL=styles1.css.map */

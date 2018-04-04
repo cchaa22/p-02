@@ -12,4 +12,22 @@
         margin-left: $margin;
         color: $top-nav-hover-color;
     }
+    
+    @include mq($tabletPortrait){
+        h3 {
+            font-size: em(16);
+            margin-left: em(5);
+            padding: em(5);
+        }
+        p {
+            font-size: em(12);
+            padding: em(5);
+        }
+    }
+    @include mq($betweenTabletAndPhone){
+        padding: 5px;
+        grid-gap: 0;
+        border-radius: 10px;
+        font-size: em(12);
+    }
 }

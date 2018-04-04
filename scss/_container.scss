@@ -11,6 +11,18 @@
     p {
         margin-left: $margin;
     }  
+    @include mq($tabletPortrait){
+        margin-left: em(75);
+        p {
+            margin-left: em(20);
+        }
+    }
+    @include mq($betweenTabletAndPhone){
+        margin-left: em(20);
+        p {
+            margin-left: em(10);
+        }
+    }
 }
 
 .calendar-container {
