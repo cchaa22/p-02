@@ -12,9 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
 <script>
 $.get("navigation.html", function(data){
     $("#nav-placeholder").replaceWith(data);
@@ -27,22 +28,19 @@ $.get("navigation-footer.html", function(data){
 </head>
 <body>
     <div class="wrapper">
-        <header>
-               
+        <header>               
             <div id="nav-placeholder"></div>
-
         </header>
+
         <main>
             <div class="container-custom">
-                <div class="row-custom">
-
-               
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
-                    <!-- <ol class="carousel-indicators">
+                <div class="row-custom">        
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol> -->
+                    </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                     <img class="d-block w-100" src="images/carousel1.jpg" alt="First slide">
@@ -64,31 +62,7 @@ $.get("navigation-footer.html", function(data){
                         </div>
                     </div>
                 </div>
-            </div>
-               
-                
-
-
-
-            <!-- <div class="hero-slider banner">
-                <div class="hero-slideshow cycle-slideshow" 
-                        data-cycle-fx="scrollHorz"
-                        data-cycle-timeout="0"
-                        data-cycle-prev="#prev"
-                        data-cycle-next="#next"
-                        data-cycle-pager="#adv-custom-pager"
-                        data-cycle-pager-template="<a href='#'><img src='{{src}}' width='110' height='47'></a>">
-                    <img src="images/carousel1.jpg" alt="bannerimg">
-                    <img src="images/carousel2.jpg" alt="bannerimg">
-                    <img src="images/carousel3.jpg" alt="bannerimg">
-            </div> -->
-                <!-- empty element for pager links -->
-            <!-- <div id="adv-custom-pager" class="hero-slider-th-container"></div>
-                <div class="hero-slider-controls-container">
-                    <img id="prev" class="prev" src="images/arrow-left-white.png" alt="arrow left">
-                    <img id="next" class="next" src="images/arrow-right-white.png" alt="arrow right">
-                </div>
-            </div> -->
+            </div>        
             <br><br>
 
             <section class="features">
@@ -130,12 +104,11 @@ $.get("navigation-footer.html", function(data){
             </div>
         </section>
         </main>
+        
         <footer>
-            <div id="nav-foot-placeholder"></div>
-           
+            <div id="nav-foot-placeholder"></div>           
         </footer>
     </div>
-    <!-- <script src="./scripts/bootstrap.min.js"></script> -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
