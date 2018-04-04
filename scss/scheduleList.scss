@@ -43,6 +43,12 @@ body {
 .wrapper {
     background-color: white;
     @include center;
+    @include mq($phoneLandscape){
+        h1{
+            margin-top: $margin;
+            font-size: em(20);
+        }
+    }
 }
 
 .calendar-container {
@@ -67,6 +73,11 @@ body {
     h1 {
         padding-left: 15px;
     }
+    @include mq($tabletPortrait){
+        h1{
+            font-size: em(20);
+        }
+    }
 }
 
 .day {
@@ -83,6 +94,9 @@ body {
     }
     @include mq($tabletPortrait){
         font-size: em(9);
+    }
+    @include mq($phoneLandscape){
+        font-size: em(7);
     }
 }
 

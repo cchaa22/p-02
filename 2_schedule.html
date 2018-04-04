@@ -21,28 +21,8 @@
             $("#nav-foot-placeholder").replaceWith(data);
         });
     </script>
-
-    <script>
-
-        var calendarView = true
-        
-        function toggleScheduleView(){
-            let styleEl = document.getElementById('styleElement')
-            let button = document.getElementById('calendar-toggle')
-            if(calendarView){
-                styleEl.href = "./styles/scheduleList.css"
-                button.textContent = "Calendar View"
-                calendarView = false
-            }else {
-                styleEl.href = "./styles/calendar.css"
-                button.textContent = "List View"
-                calendarView = true
-            }
-        }
-
-    </script>
 </head>
-<body class="schedule-body">
+<body class="schedule-body" onresize="handleStyleFiles()">
     <div class="wrapper">
         <header>
             <div id="nav-placeholder"></div>
@@ -307,5 +287,38 @@
                 <div id="nav-foot-placeholder"></div>           
         </footer>
     </div>
+    <script>
+
+            var calendarView = true
+            var styleEl = document.getElementById('styleElement')
+            button = document.getElementById('calendar-toggle')
+            
+            function toggleScheduleView(){
+                if(calendarView){
+                    styleEl.href = "./styles/scheduleList.css"
+                    button.textContent = "Calendar View"
+                    calendarView = false
+                }else {
+                    styleEl.href = "./styles/calendar.css"
+                    button.textContent = "List View"
+                    calendarView = true
+                }
+            }
+    
+            function handleStyleFiles(){
+                if ($(window).width() < 800) {
+                    button.style.display = 'none'
+                    styleEl.href = "./styles/scheduleList.css"
+                    button.textContent = "Calendar View"
+                    calendarView = false
+                }
+                if ($(window).width() >= 800) {
+                    button.style.display = 'block'
+                }
+            }
+    
+            onload=handleStyleFiles
+    
+        </script>
 </body>
 </html>
