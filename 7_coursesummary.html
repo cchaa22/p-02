@@ -11,9 +11,12 @@
 
     <script src="https://code.jquery.com/jquery.min.js"></script>
 <script>
-$.get("navigation.html", function(data){
-    $("#nav-placeholder").replaceWith(data);
-});
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    $.get("navigation-footer.html", function(data){
+        $("#nav-foot-placeholder").replaceWith(data);
+    });
 </script>
 
 </head>
@@ -140,6 +143,9 @@ $.get("navigation.html", function(data){
                 </section>
             </div>
         </main>
+        <footer>
+            <div id="nav-foot-placeholder"></div>
+        </footer>
     </div>
 </body>
 </html>

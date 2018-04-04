@@ -35,6 +35,12 @@ body {
   background-color: lightgrey; }
   .day:nth-child(even) {
     background-color: white; }
+  @media (max-width: 61.25em) {
+    .day {
+      font-size: 0.75em; } }
+  @media (max-width: 46.875em) {
+    .day {
+      font-size: 0.5625em; } }
 
 .empty-month-start {
   display: none; }

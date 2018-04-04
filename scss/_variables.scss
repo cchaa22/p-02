@@ -38,6 +38,12 @@ $padding: rem($space);
 $margin: 40px;
 $half-padding: rem(($space / 2));
 
+// Media Query Breakpoints
+$desktopMedium: em(1250);
+$tabletLandscape: em(980);
+$tabletPortrait: em(750);
+$phoneLandscape: em(670);
+$phonePortrait: em(420);
 
 // Utility Variables
 $link-hover-selector: '&:hover, &:focus, &:active';

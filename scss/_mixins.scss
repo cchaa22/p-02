@@ -79,3 +79,10 @@
     }
 
 }
+
+// Media Query Mixin
+@mixin mq($w){
+    @media (max-width: $w){
+        @content;
+    }
+}

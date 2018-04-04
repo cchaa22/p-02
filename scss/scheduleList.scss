@@ -1,4 +1,6 @@
+@import 'functions';
 @import 'variables';
+@import 'mixins';
 
 @mixin center($mc: true, $zero-mr: true) {
 
@@ -76,6 +78,12 @@ body {
     &:nth-child(even){
         background-color: lighten(lightgrey, 50);
     }  
+    @include mq($tabletLandscape){
+        font-size: em(12);
+    }
+    @include mq($tabletPortrait){
+        font-size: em(9);
+    }
 }
 
 .empty-month-start {

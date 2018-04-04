@@ -14,6 +14,9 @@
 $.get("navigation.html", function(data){
     $("#nav-placeholder").replaceWith(data);
 });
+$.get("navigation-footer.html", function(data){
+    $("#nav-foot-placeholder").replaceWith(data);
+});
 </script>
 
 </head>
@@ -79,6 +82,9 @@ $.get("navigation.html", function(data){
                 </div>
             </div>
         </main>
+        <footer>
+                <div id="nav-foot-placeholder"></div>
+        </footer>
     </div>
     <script>
         var form = document.getElementById('contact-form');
