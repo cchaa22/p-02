@@ -112,7 +112,8 @@ body {
 .bottom-nav {
   height: 45px;
   display: flex;
-  border-bottom: 4px #f3f3f1 solid; }
+  border-bottom: 4px #f3f3f1 solid;
+  background-color: #ffffff; }
   .bottom-nav .logo {
     display: block;
     position: relative;
