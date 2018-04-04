@@ -27,7 +27,9 @@
         <header>
             <div id="nav-placeholder"></div>
         </header>
-        <h1>2017 / 2018 Schedule</h1>
+        
+        <main>
+            <br><h1>2017 / 2018 Schedule</h1>
 
         <!-- <div class="container"> -->
 
@@ -288,13 +290,12 @@
         </footer>
     </div>
     <script>
-
             var calendarView = true
             var styleEl = document.getElementById('styleElement')
             button = document.getElementById('calendar-toggle')
             
-            function toggleScheduleView(){
-                if(calendarView){
+            function toggleScheduleView() {
+                if(calendarView) {
                     styleEl.href = "./styles/scheduleList.css"
                     button.textContent = "Calendar View"
                     calendarView = false
@@ -305,7 +306,7 @@
                 }
             }
     
-            function handleStyleFiles(){
+            function handleStyleFiles() {
                 if ($(window).width() < 800) {
                     button.style.display = 'none'
                     styleEl.href = "./styles/scheduleList.css"
@@ -320,5 +321,6 @@
             onload=handleStyleFiles
     
         </script>
+    </main>
 </body>
 </html>
