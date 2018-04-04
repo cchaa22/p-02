@@ -185,6 +185,12 @@ footer {
     border-top: 2px solid lightgray;
     margin: 0; }
 
+.navbar-custom {
+  position: fixed;
+  top: -1px;
+  width: 100%;
+  z-index: 999; }
+
 .features {
   background-color: #ffffff; }
   .features h1 {
@@ -335,13 +341,17 @@ table {
   color: #ffffff; }
   .staff-table thead {
     color: #fce80c; }
+  .staff-table a {
+    text-decoration: none;
+    color: #ffffff; }
 
 .admin-table {
   background-color: #fce80c;
   color: #003c79; }
 
 main {
-  flex: 1; }
+  flex: 1;
+  margin-top: 95px; }
 
 .greater-contact-area {
   display: flex; }

@@ -27,8 +27,13 @@ table {
     background-color: $bcit-main-blue-color;
     color: $table-white-font-color;
 
-    thead{
+    thead {
         color: $bcit-main-yellow-color;
+    }
+
+    a {
+        text-decoration: none;
+        color: $table-white-font-color;
     }
 }
 
