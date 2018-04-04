@@ -27,30 +27,67 @@ $.get("navigation-footer.html", function(data){
             </header>
         <main>
             <div class="container">
-                <h1>Students Page</h1><br>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Student Names</th>
-                            <th>Preferred Names</th>
-                            <th>Email Addresses</th>
-                            <th>Social Media(s)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h1>Current Students</h1>
+                <div class="students-grid-container" id="students-grid-container">
+                    <h3>Last Name</h3>
+                    <h3>Preferred Name</h3>
+                    <h3>Email Address</h3>
+                </div>
             </div>
         </main>
     </div>
     <footer>
             <div id="nav-foot-placeholder"></div>
     </footer>
+    <script>
+        var students = [
+            "Ata,Arlene,aata1@my.bcit.ca",
+            "Bascombe,Edward,ebascombe1@my.bcit.ca",
+            "Dhanji,Armaan,adhanji8@my.bcit.ca",
+            "Flynn,Benjamin,bflynn5@my.bcit.ca",
+            "Jarosz,Manveer,mjarosz@my.bcit.ca",
+            "Kahsay Yohannes,Metkel,mkahsayyohannes@my.bcit.ca",
+            "Kline,Kevin,kkline2@my.bcit.ca",
+            "Lingat,Jan Arveneil,jlingat1@my.bcit.ca",
+            "MacNeil,Liam,qmacneil@my.bcit.ca",
+            "May,Duncan,dmay18@my.bcit.ca",
+            "Nguyen,Khoa,knguyen@my.bcit.ca",
+            "Okwuolisa,Jeremiah,jokwuolisa@my.bcit.ca",
+            "Post,Daniel,dpost3@my.bcit.ca",
+            "Rosa,Vittorio,vrosa2@my.bcit.ca",
+            "Setterlund,Tom,dsetterlund@my.bcit.ca",
+            "Taheri,Fatemeh,ftaheri2@my.bcit.ca",
+            "Tumtaweetikul,Warancha,wtumtaweetikul@my.bcit.ca",
+            "Vande Zande,Michael,mvandezande@my.bcit.ca",
+            "Winterbotham,Clayton,cwinterbotham@my.bcit.ca",
+            "Xu,Wenjie,wxu42@my.bcit.ca",
+            "Zapeka,Edhar,ezapeka@my.bcit.ca",
+            "Zhou,Lin,lzhou58@my.bcit.ca"
+        ]
+
+        function init(){
+            for(let i = 0; i < students.length; i++){
+                let studentsArea = document.getElementById("students-grid-container")
+                let student = students[i].split(",")
+                // parse out first name, append it to a td
+                let fNameP = document.createElement('p')
+                let fNameTextNode = document.createTextNode(student[0])
+                fNameP.appendChild(fNameTextNode)
+                // parse out last name and append it to a td
+                let lNameP = document.createElement('p')
+                let lNameTextNode = document.createTextNode(student[1])
+                lNameP.appendChild(lNameTextNode)
+                // parse out email and append it to a td
+                let emailP = document.createElement('p')
+                let emailTextNode = document.createTextNode(student[2])
+                emailP.appendChild(emailTextNode)
+                //add em all to grid area
+                studentsArea.appendChild(fNameP)
+                studentsArea.appendChild(lNameP)
+                studentsArea.appendChild(emailP)
+            }
+        }
+        onload=init
+    </script>
 </body>
 </html>

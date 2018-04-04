@@ -1,0 +1,13 @@
+.students-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px;
+    grid-gap: 2px;
+    background-color: $calendar-panel-color;
+    color: white;
+    border-radius: 10px;
+    h3 {
+        text-align: center;
+        color: $top-nav-hover-color;
+    }
+}

@@ -348,4 +348,16 @@ main {
   max-width: 400px;
   min-width: 300px; }
 
+.students-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 15px;
+  grid-gap: 2px;
+  background-color: #003c71;
+  color: white;
+  border-radius: 10px; }
+  .students-grid-container h3 {
+    text-align: center;
+    color: #fce80c; }
+
 /*# sourceMappingURL=styles1.css.map */
