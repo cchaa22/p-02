@@ -16,11 +16,9 @@ footer {
     .footer-nav a {
         display: block;
         text-decoration: none;
-        padding: $half-padding;
         font-size: 1.2em;
         color: lightgray;
         
-
         #{$link-hover-selector} {
             color:$footer-hover-color;
             $link-hover-selector: '&:hover, &:focus, &:active';
@@ -33,8 +31,7 @@ footer {
 
     p {
         border-top: 2px solid lightgray;
-        margin: 0;
-       
+        margin: 0;      
     }
 
 }

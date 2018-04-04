@@ -7,8 +7,9 @@
     color: white;
     border-radius: 10px;
     min-width: 570px;
+
     h3 {
-        text-align: center;
+        margin-left: $margin;
         color: $top-nav-hover-color;
     }
 }

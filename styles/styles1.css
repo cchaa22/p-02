@@ -175,7 +175,6 @@ footer {
   footer .footer-nav a {
     display: block;
     text-decoration: none;
-    padding: 0.9375rem;
     font-size: 1.2em;
     color: lightgray; }
     footer .footer-nav a:hover, footer .footer-nav a:focus, footer .footer-nav a:active {
@@ -321,7 +320,7 @@ table {
     padding: 20px; }
 
 .imgformat {
-  width: 80px;
+  width: 220px;
   height: 70px; }
 
 main {
@@ -385,7 +384,7 @@ main {
   border-radius: 10px;
   min-width: 570px; }
   .students-grid-container h3 {
-    text-align: center;
+    margin-left: 40px;
     color: #fce80c; }
 
 /*# sourceMappingURL=styles1.css.map */
