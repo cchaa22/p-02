@@ -1,5 +1,6 @@
 //Variables
 $space: 30;
+$border-radius-table: 10px;
 
 // Color Mods
 
@@ -11,12 +12,16 @@ $main-nav-color: #ffffff;
 $main-nav-font-color: #870d0d;
 $bg-banner-color: #870d0d;
 $bg-table-color:#ededed;
+$bg-table-bcit-color: #003c79;
 $search-box-color: #222526;
 $bcit-main-blue-color: #003c79;
 $bg-carousel: #fce80c;
 
 // Text Colors
 $section-events-font-color: #ffffff;
+$bcit-main-font-color: #003c79;
+$table-white-font-color: #ffffff;
+$bcit-main-yellow-color: #fce80c;
 
 // Site Colors
 $section-features-color: #ffffff;
@@ -30,7 +35,6 @@ $footer-hover-color: #fce80c;
 
 // Border Colors
 $main-nav-border-bottom-color: #f3f3f1;
-
 
 // Layout Variables
 $site-width: 1920px;
