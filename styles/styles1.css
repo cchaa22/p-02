@@ -43,20 +43,6 @@ body {
   .banner p {
     margin: 0; }
 
-.hero-slider {
-  position: relative; }
-  .hero-slider img {
-    max-width: 100%;
-    height: auto; }
-
-#adv-custom-pager {
-  left: 50%;
-  transform: translateX(-50%);
-  border: 1px solid white;
-  position: absolute;
-  top: 475px;
-  z-index: 999; }
-
 .top-nav {
   background-color: #30393a; }
 
@@ -280,6 +266,47 @@ section {
 .para p {
   text-indent: 0px;
   margin-left: 40px; }
+
+.container-custom {
+  background-color: #fce80c; }
+
+.row-custom {
+  width: 70%;
+  margin: 30px auto; }
+
+.carousel {
+  position: relative; }
+  .carousel::before {
+    content: "";
+    width: 1px;
+    margin-left: -1px;
+    float: left;
+    height: 0;
+    /* Use any height divided by width here
+       16:9 - 9 / 16 - Video
+       4:3 - 3 / 4 - Some photos
+       3:2 - 2 / 3 - Some photos
+       1:1 - 1 / 1 - square
+    */
+    padding-top: calc((9 / 16) * 100%); }
+  .carousel::after {
+    /* to clear float */
+    content: "";
+    display: table;
+    clear: both; }
+
+.carousel-inner {
+  height: 100%;
+  position: absolute; }
+
+.carousel-item {
+  height: 100%; }
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute; }
 
 .list {
   list-style: none; }

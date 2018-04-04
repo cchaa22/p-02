@@ -1,8 +1,8 @@
-.top-nav{  
+.top-nav {  
     background-color: $top-nav-color;
 }
 
-.head-nav{
+.head-nav {
     display: flex;
     justify-content: center;
     position: relative;
@@ -16,7 +16,7 @@
         @include flatten(true);
     }
 
-    li{
+    li {
         flex: 1;
     }
 
@@ -61,14 +61,14 @@
         display: block;
     }
 
-    .search-form{
+    .search-form {
         flex: 1;
         position: absolute;
         top: 0;
         right: 0;
     }
 
-    .search-box{
+    .search-box {
         height: 44px;
         background-color: $search-box-color;
         border: none;
@@ -76,12 +76,12 @@
         padding-left: 14px;
     }
 
-    .fa{
+    .fa {
         font-size: 1.2rem;
         color: $search-icon;
     }
 
-    .btn{
+    .btn {
         background-color: $btn-color;
         border: none;
     }

@@ -13,6 +13,7 @@ $bg-banner-color: #870d0d;
 $bg-table-color:#ededed;
 $search-box-color: #222526;
 $bcit-main-blue-color: #003c79;
+$bg-carousel: #fce80c;
 
 // Text Colors
 $section-events-font-color: #ffffff;
@@ -40,3 +41,11 @@ $half-padding: rem(($space / 2));
 
 // Utility Variables
 $link-hover-selector: '&:hover, &:focus, &:active';
+
+// Aspect Ratios
+$aspect-ratios: (
+    'video': rp(16, 9),
+    'square': rp(1,1),
+    'cinema': rp(21,9),
+    'photo': rp(3,2)
+);

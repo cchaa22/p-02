@@ -1,19 +1,19 @@
-footer{
+footer {
     background-color: $nav-footer-color;
     color: lightgray;
     text-align: center;
     padding: $padding;
 
-    .footer-nav ul{
+    .footer-nav ul {
         display: flex;    
     }
 
-    .footer-nav li{
+    .footer-nav li {
         list-style: none;
         flex: 1;  
     }
 
-    .footer-nav a{
+    .footer-nav a {
         display: block;
         text-decoration: none;
         padding: $half-padding;
@@ -21,7 +21,7 @@ footer{
         color: lightgray;
         
 
-        #{$link-hover-selector}{
+        #{$link-hover-selector} {
             color:$footer-hover-color;
             $link-hover-selector: '&:hover, &:focus, &:active';
         }
@@ -31,7 +31,7 @@ footer{
         }
     }
 
-    p{
+    p {
         border-top: 2px solid lightgray;
         margin: 0;
        
