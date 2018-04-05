@@ -46,6 +46,7 @@
 
     li a:hover, .dropdown:hover .dropbtn {
         background-color: $main-nav-color;
+        border-bottom: 3px solid $bcit-main-yellow-color;       
     }
     
     li.dropdown {
@@ -69,7 +70,10 @@
         text-align: left;
     }
     
-    .dropdown-content a:hover { background-color: #f1f1f1 }
+    .dropdown-content a:hover { 
+        background-color: #f1f1f1;
+        border: none;
+    }
     
     .dropdown:hover .dropdown-content {
         display: block;

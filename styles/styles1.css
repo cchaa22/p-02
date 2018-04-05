@@ -145,7 +145,8 @@ body {
     text-decoration: none;
     color: #003c79; }
   .main-nav li a:hover, .main-nav .dropdown:hover .dropbtn {
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    border-bottom: 3px solid #fce80c; }
   .main-nav li.dropdown {
     display: inline-block; }
   .main-nav .dropdown-content {
@@ -162,7 +163,8 @@ body {
     display: block;
     text-align: left; }
   .main-nav .dropdown-content a:hover {
-    background-color: #f1f1f1; }
+    background-color: #f1f1f1;
+    border: none; }
   .main-nav .dropdown:hover .dropdown-content {
     display: block; }
 
@@ -221,9 +223,12 @@ footer {
   margin: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  color: white;
+  color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px; }
+  .gallery p a {
+    text-decoration: none;
+    color: #ffffff; }
 
 .gallery-item {
   position: relative; }
