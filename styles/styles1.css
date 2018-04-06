@@ -368,6 +368,24 @@ table {
   background-color: #fce80c;
   color: #003c79; }
 
+.td-bold {
+  font-weight: bold; }
+
+.tr-yellow {
+  background-color: #fce80c;
+  color: #003c79;
+  border-radius: 10px; }
+
+.tr-yellow-light {
+  background-color: #fffdc6;
+  color: #003c79;
+  border-radius: 10px; }
+
+.th-head {
+  background-color: #414141;
+  color: #ffffff;
+  border-radius: 10px; }
+
 main {
   flex: 1;
   margin-top: 95px; }

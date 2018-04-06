@@ -41,3 +41,25 @@ table {
     background-color: $bcit-main-yellow-color;
     color:  $bcit-main-blue-color;
 }
+
+.td-bold {
+    font-weight: bold;
+}
+
+.tr-yellow {
+    background-color: $bcit-main-yellow-color;
+    color:  $bcit-main-blue-color;
+    border-radius: $border-radius-table;
+}
+
+.tr-yellow-light {
+    background-color: $lightgolden-yellow-color;
+    color:  $bcit-main-blue-color;
+    border-radius: $border-radius-table;
+}
+
+.th-head {
+    background-color: $nav-footer-color;
+    color: $table-white-font-color;
+    border-radius: $border-radius-table;
+}
