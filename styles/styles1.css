@@ -42,7 +42,7 @@ body {
 
 .banner {
   background-color: #003c79;
-  color: #fff; }
+  color: #ffffff; }
   .banner p {
     margin: 0; }
 
@@ -104,7 +104,7 @@ footer {
           line-height: 38px; }
         .top-nav .head-nav .search-form {
           position: static;
-          display: block;
+          display: none;
           width: 100%; } }
 
 .head-nav {
@@ -162,7 +162,8 @@ footer {
     height: 140%; }
   @media (max-width: 35.625em) {
     .logo {
-      position: static; } }
+      position: static;
+      margin-left: 18px; } }
 
 .navbar-custom .bottom-nav {
   height: 45px;
@@ -564,7 +565,8 @@ main {
       background-color: transparent;
       border: none;
       padding: 0;
-      cursor: pointer; }
+      cursor: pointer;
+      margin-right: 30px; }
       .hamburger .hamburger-content {
         height: 24px; }
       .hamburger .hamburger-icon {

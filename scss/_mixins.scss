@@ -54,7 +54,6 @@
 // This defaults to a square 
 // aspect ratio
 @mixin aspect-ratio-box($ar) {
-
     $ratio: 100%;
 
     @if map_has_key($aspect-ratios, $ar) {
@@ -81,8 +80,8 @@
 }
 
 // Media Query Mixin
-@mixin mq($w){
-    @media (max-width: $w){
+@mixin mq($w) {
+    @media (max-width: $w) {
         @content;
     }
 }
