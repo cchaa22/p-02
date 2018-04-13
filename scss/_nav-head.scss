@@ -1,88 +1,130 @@
-.top-nav {  
-    background-color: $top-nav-color;
-}
+// .top-nav {  
+//     background-color: $top-nav-color;
+// }
 
-.head-nav {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    border-bottom: 6px solid #fff72b;
+// .head-nav {
+//     display: flex;
+//     justify-content: center;
+//     position: relative;
+//     border-bottom: 6px solid #fff72b;
    
-    ul {
-        list-style-type: none;
-        display: flex;
-        padding: 0;  
+//     ul {
+//         list-style-type: none;
+//         display: flex;
+//         padding: 0;  
         
-        @include flatten(true);
-    }
+//         @include flatten(true);
+//     }
 
-    li {
-        flex: 1;
-    }
+//     li {
+//         flex: 1;
+//     }
 
-    li a, .dropbtn {
-        display: inline-block;
-        color: white;
-        text-align: center;
+//     li a, .dropbtn {
+//         display: inline-block;
+//         color: white;
+//         text-align: center;
         
-        padding: 14px 16px;
-        text-decoration: none;
-    }
+//         padding: 14px 16px;
+//         text-decoration: none;
+//     }
 
-    li a:hover, .dropdown:hover .dropbtn {
-        // background-color: $top-nav-hover-color;
-        border-top: 5px solid $top-nav-hover-color;
-    }
+//     li a:hover, .dropdown:hover .dropbtn {
+//         // background-color: $top-nav-hover-color;
+//         border-top: 5px solid $top-nav-hover-color;
+//     }
     
-    li.dropdown {
-        display: inline-block;
-    }
+//     li.dropdown {
+//         display: inline-block;
+//     }
     
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
+//     .dropdown-content {
+//         display: none;
+//         position: absolute;
+//         background-color: #f9f9f9;
+//         min-width: 160px;
+//         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//         z-index: 1;
+//     }
     
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
+//     .dropdown-content a {
+//         color: black;
+//         padding: 12px 16px;
+//         text-decoration: none;
+//         display: block;
+//         text-align: left;
+//     }
     
-    .dropdown-content a:hover {background-color: #f1f1f1}
+//     .dropdown-content a:hover {background-color: #f1f1f1}
     
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
+//     .dropdown:hover .dropdown-content {
+//         display: block;
+//     }
 
-    .search-form {
-        flex: 1;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
+//     .search-form {
+//         flex: 1;
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//     }
 
-    .search-box {
-        height: 44px;
-        background-color: $search-box-color;
-        border: none;
-        font-size: 1.2rem;
-        padding-left: 14px;
-    }
+//     .search-box {
+//         height: 44px;
+//         background-color: $search-box-color;
+//         border: none;
+//         font-size: 1.2rem;
+//         padding-left: 14px;
+//     }
 
-    .fa {
-        font-size: 1.2rem;
-        color: $search-icon;
-    }
+//     .fa {
+//         font-size: 1.2rem;
+//         color: $search-icon;
+//     }
 
-    .btn {
-        background-color: $btn-color;
-        border: none;
-    }
-}
+//     .btn {
+//         background-color: $btn-color;
+//         border: none;
+//     }
+// }
+
+// MW Styles - incorporate above
+// .mw-class .top-nav {
+//     @include mq($phoneLandscape){
+//         display: none;
+//         width: 100%;
+
+//         .show & {
+//             display: block;
+//         }
+
+//         .head-nav {
+//             display: flex;
+//             flex-direction: column-reverse;
+//             border-bottom: none;
+
+//             ul {
+//                 display: block;
+//             }
+
+//             li a {
+//                 display: block;
+//                 line-height: 38px;
+//             }
+
+//             .dropdown {
+//                 display: none;
+//             }
+
+//             .search-form {
+//                 flex: 1;
+//                 position: static;
+//                 top: 0;
+//                 right: 0;
+//                 display: block;
+//                 width: 100%;
+//             }
+
+//         }
+
+//     }
+// }
