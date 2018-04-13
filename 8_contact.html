@@ -37,28 +37,28 @@
                             <div class="contact-input-area">
                                 <div class="contact-input-box">
                                     <label for="FName">First Name: </label>
-                                    <input id="FName" type="text">
+                                    <input id="FName" type="text" class="contact-field">
                                 </div>
-                                <div id="first-name-input"></div>
+                                <div id="first-name-input"></div>  
                             </div>
                             <div class="contact-input-area">
                                 <div class="contact-input-box">
                                     <label for="LName">Last Name: </label>
-                                    <input id="LName" type="text">
+                                    <input id="LName" type="text" class="contact-field">
                                 </div>
                                 <div id="last-name-input"></div>
                             </div>
                             <div class="contact-input-area">
                                 <div class="contact-input-box">
                                     <label for="email">Email: </label>
-                                    <input id="email" type="text">
+                                    <input id="email" type="text" class="contact-field">
                                 </div>
                                 <div id="email-input"></div>
                             </div>
                             <div class="contact-input-area">
                                 <div class="contact-input-box">
                                     <label for="phoneNum">Phone: </label>
-                                    <input id="phoneNum" type="tel"><br>
+                                    <input id="phoneNum" type="tel" class="contact-field"><br>
                                 </div>
                                 <div id="phone-num-input"></div>
                             </div>
@@ -124,7 +124,7 @@
             let location = document.getElementById(locationIdName)
             let messageFromUs = document.createElement('p')
             messageFromUs.style.color = color
-            messageFromUs.style.fontSize = fontSize || "10px";
+            messageFromUs.style.fontSize = fontSize || "16px";
             let message = document.createTextNode(msg)
             messageFromUs.appendChild(message)
             location.appendChild(messageFromUs)
