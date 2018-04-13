@@ -29,9 +29,11 @@ $.get("navigation-footer.html", function(data){
             <div class="container">
                 <h1>Current Students</h1><br>
                 <div class="students-grid-container" id="students-grid-container">
-                    <h3>Last Name</h3>
-                    <h3>Preferred Name</h3>
-                    <h3>Email Address</h3>
+                    <div class="students-headers" id="students-headers">
+                        <h3>Last Name</h3>
+                        <h3>Preferred Name</h3>
+                        <h3>Email Address</h3>
+                    </div>
                 </div>
             </div>
         </main>
@@ -82,12 +84,18 @@ $.get("navigation-footer.html", function(data){
                 let emailP = document.createElement('p')
                 let emailTextNode = document.createTextNode(student[2])
                 emailP.appendChild(emailTextNode)
+                //create a parent div for each student
+                let studentDiv = document.createElement('div')
+                studentDiv.className = 'individual-student'
                 //add em all to grid area
-                studentsArea.appendChild(fNameP)
-                studentsArea.appendChild(lNameP)
-                studentsArea.appendChild(emailP)
+                studentDiv.appendChild(fNameP)
+                studentDiv.appendChild(lNameP)
+                studentDiv.appendChild(emailP)
+                //add the student to the students area
+                studentsArea.appendChild(studentDiv)
             }
         }
+
         onload=init
     </script>
 </body>

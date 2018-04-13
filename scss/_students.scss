@@ -1,33 +1,70 @@
 .students-grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 15px;
-    grid-gap: 2px;
+    grid-template-columns: 1fr;
     background-color: $calendar-panel-color;
     color: white;
     border-radius: 10px;
-    min-width: 570px;
+    min-width: 540px;
+
+    .students-headers, .individual-student {
+        display: grid;
+        grid-template-columns: 25% 30% 45%;
+
+        p{
+            text-align: start;
+        }
+    }
+
+    .individual-student :nth-child(3n+3) {
+        text-align: end;
+        margin-left: 0;
+        margin-right: $margin;
+    }
 
     h3 {
-        margin-left: $margin;
+        margin: $margin;
         color: $top-nav-hover-color;
+        text-align: center;
     }
     
     @include mq($tabletPortrait){
-        h3 {
-            font-size: em(16);
-            margin-left: em(5);
-            padding: em(5);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: em(10);
+        background-color: white;
+
+        .students-headers {
+            display: none;
+        }
+
+        .individual-student {
+            display: flex;
+            flex-direction: column;
+            background-color: $calendar-panel-color;
+            border-radius: em(10);
+        }
+        .individual-student :nth-child(3n+3) {
+            text-align: start;
+            margin-right: 0;
+            margin-left: em(20);
         }
         p {
             font-size: em(12);
-            padding: em(5);
         }
     }
     @include mq($betweenTabletAndPhone){
-        padding: 5px;
-        grid-gap: 0;
-        border-radius: 10px;
-        font-size: em(12);
+        grid-template-columns: 1fr 1fr;
+        min-width: em(420);
+
+        .individual-student :nth-child(3n+3) {
+            text-align: start;
+            margin-right: 0;
+            margin-left: em(10);
+        }
+    }
+    @include mq($phonePortrait) {
+        grid-template-columns: 1fr;
+        .individual-student {
+            width: em(185);
+        }
     }
 }
