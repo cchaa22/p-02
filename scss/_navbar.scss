@@ -154,7 +154,7 @@
     }
 }
 
-.bottom-nav {
+.navbar-custom .bottom-nav {
     height: 45px;
     display: flex;
     border-bottom: 4px $main-nav-border-bottom-color solid;
@@ -222,55 +222,57 @@
     ul {
         list-style-type: none;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-evenly; 
+    }
 
-        margin: 0 auto;
-        max-width: 1200px;
+}
 
-        @include flatten(true);
+.navbar-custom .main-nav ul {
+    margin: 0 auto;
+    max-width: 1200px;
 
-        @media (max-width: $phoneLandscape) {
+    @include flatten(true);
+
+    @media (max-width: $phoneLandscape) {
+        display: none;
+    }
+
+    @include mq(em(900)){
+        margin: 0 0 0 117px;
+    }
+
+    @include mq($phoneLandscape) {
+        display: block;
+        margin: 0;
+        height: auto;
+        width: 100%;
+
+        li a {
+            display: block;
+            line-height: 35px;
+            color: $bcit-white-color;
+        }
+
+        li.dropdown {
+            display: block;
+        }
+
+        .dropdown-content {
             display: none;
         }
 
-        @include mq(em(900)){
-            margin: 0 0 0 117px;
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: transparent;
+            border-bottom: 3px solid $bcit-main-yellow-color;       
         }
 
-        @include mq($phoneLandscape) {
-            display: block;
-            margin: 0;
-            height: auto;
+        li.dropdown:hover .dropdown-content {
+            background-color: $top-nav-color;
             width: 100%;
-    
-            li a {
-                display: block;
-                line-height: 35px;
+            a {
                 color: $bcit-white-color;
+                text-align:center;
             }
-    
-            li.dropdown {
-                display: block;
-            }
-    
-            .dropdown-content {
-                display: none;
-            }
-    
-            li a:hover, .dropdown:hover .dropbtn {
-                background-color: transparent;
-                border-bottom: 3px solid $bcit-main-yellow-color;       
-            }
-    
-            li.dropdown:hover .dropdown-content {
-                background-color: $top-nav-color;
-                width: 100%;
-                a {
-                    color: $bcit-white-color;
-                    text-align:center;
-                }
-            }
-    
         }
     }
 }
