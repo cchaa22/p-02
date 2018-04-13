@@ -126,10 +126,12 @@ footer {
     display: inline-block;
     color: #ffffff;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none; }
+    padding: 9px 16px 14px;
+    text-decoration: none;
+    border-top: 5px solid transparent; }
   .head-nav li a:hover {
-    border-top: 5px solid #fce80c; }
+    border-top: 5px solid #fce80c;
+    margin: auto; }
   .head-nav .search-form {
     flex: 1;
     position: absolute;

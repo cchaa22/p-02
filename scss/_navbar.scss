@@ -94,13 +94,14 @@
         display: inline-block;
         color: $bcit-white-color;
         text-align: center;
-        
-        padding: 14px 16px;
+        padding: 9px 16px 14px;
         text-decoration: none;
+        border-top: 5px solid transparent;
     }
 
     li a:hover {
         border-top: 5px solid $top-nav-hover-color;
+        margin: auto;
     }
 
     .search-form {
