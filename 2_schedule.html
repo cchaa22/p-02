@@ -13,6 +13,10 @@
 
     <!-- navbar integration -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
+
+    <!-- moment.js -->
+    <script src="./scripts/moment.min.js"></script>
+
     <script>
         $.get("navigation.html", function(data){
             $("#nav-placeholder").replaceWith(data);
@@ -317,6 +321,27 @@
                 }
                 if ($(window).width() >= 800) {
                     button.style.display = 'block'
+                }
+                highlightDay()
+            }
+
+            function highlightDay() {
+                var today = date1 = new Date()
+                today.setHours(0, 0, 0, 0)
+                var formattedToday = moment(today).format('LL')
+                var allDays = document.getElementsByClassName('date')
+                var startIndProj = new Date('April 17, 2018')
+                var endIndProj = new Date('May 17, 2018')
+                for (let i = 0; i < allDays.length; i++) {
+                    if(allDays[i].textContent == formattedToday.toString()){
+                        allDays[i].parentNode.style.backgroundColor = 'lightblue'
+                        return
+                    }
+                    if (allDays[i].textContent == 'April 17 - May 11'
+                         && today >= startIndProj && today <= endIndProj) {
+                            allDays[i].parentNode.style.backgroundColor = 'lightblue'
+                            return
+                    }
                 }
             }
     
