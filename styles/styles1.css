@@ -147,6 +147,9 @@ footer {
   .head-nav .btn {
     background-color: #30393a;
     border: none; }
+  @media (max-width: 53.75em) {
+    .head-nav .search-form {
+      display: none; } }
 
 .logo {
   position: absolute;

@@ -127,6 +127,12 @@
         background-color: $btn-color;
         border: none;
     }
+
+    @media (max-width: $top-nav-max-width) {
+        .search-form {
+            display: none;
+        }
+    }
 }
 
 .logo {
