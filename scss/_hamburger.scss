@@ -14,7 +14,6 @@
 
 // Hamburger Styles
 .hamburger {
-
     // Hamburger Variables
     $transition: all 0.3s ease-in-out;
     $bar-height: 4px;
@@ -34,6 +33,7 @@
         border: none;
         padding: 0;
         cursor: pointer;
+        margin-right: 30px;
     
         .hamburger-content {
             height: 24px;
@@ -83,7 +83,6 @@
                     top: 0;
                 }
             }
-
         }
 
         &:focus,
@@ -93,7 +92,6 @@
 
         &:focus .hamburger-content {
             outline: 5px solid #7683C9;
-        }
-    
+        }  
     }
 }

@@ -43,6 +43,7 @@
     grid-template-columns: 200px;
     grid-row-gap: 0.75em;
     max-width: 400px;
+    
     label {
         min-width: 100px;
     }
@@ -56,6 +57,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: $margin;
+    
     label {
         min-width: 175px;
     }

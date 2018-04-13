@@ -51,7 +51,7 @@
             font-size: em(12);
         }
     }
-    @include mq($betweenTabletAndPhone){
+    @include mq($betweenTabletAndPhone) {
         grid-template-columns: 1fr 1fr;
         min-width: em(420);
 

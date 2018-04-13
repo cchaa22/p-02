@@ -10,21 +10,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://code.jquery.com/jquery.min.js"></script>
-<script>
-$.get("navigation.html", function(data){
-    $("#nav-placeholder").replaceWith(data);
-});
-$.get("navigation-footer.html", function(data){
-    $("#nav-foot-placeholder").replaceWith(data);
-});
-</script>
+
+    <script>
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    $.get("navigation-footer.html", function(data){
+        $("#nav-foot-placeholder").replaceWith(data);
+    });
+    </script>
 </head>
+
 <body>
     <div class="wrapper">
         <header>
-                <div id="nav-placeholder"></div>
+            <div id="nav-placeholder"></div>
                 
-            </header>
+        </header>
         <main>
             <div class="container">
                 <h1>Current Students</h1><br>
@@ -38,9 +40,10 @@ $.get("navigation-footer.html", function(data){
             </div>
         </main>
         <footer>
-                <div id="nav-foot-placeholder"></div>
-        </footer>
+            <div id="nav-foot-placeholder"></div>
+        </footer>       
     </div>
+
     <script src="./scripts/navbar.js"></script>
     <script>
         var students = [
