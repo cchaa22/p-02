@@ -1,0 +1,5 @@
+.info-container {
+    @include mq($phonePortrait){
+        margin-right: em(5);
+    }
+}
