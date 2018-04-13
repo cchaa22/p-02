@@ -5,3 +5,19 @@
     width: 100%;
     z-index: 999;
 }
+
+.mw-class {
+   @include mq($phoneLandscape){
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       height: 50px;
+       background-color: $top-nav-color;
+
+        .show & {
+            height: auto;
+            overflow: scroll;
+        }
+
+    } 
+}

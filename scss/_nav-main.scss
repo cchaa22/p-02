@@ -34,6 +34,9 @@
 
         @include flatten(true);
 
+        @media (max-width: $phoneLandscape){
+            display: none;
+        }
     }
 
     li a, .dropbtn {
@@ -79,3 +82,95 @@
         display: block;
     }
 }
+
+// Temp styles for demo only...
+// delete and incorporate above
+.mw-class .logo {
+    position: absolute;
+    top: 50px;
+    left: 33px;
+    display: block;
+    z-index: 900;
+    height: 45px;
+    width: 83px;
+    /* margin-left: 40px; */
+    //flex: 0 0 83px;
+    // display: flex;
+    // align-items: center;
+    transition: all 0.3s ease;
+    
+    img {
+        width: 100%;
+        height: 140%;
+    }
+
+    @include mq($phoneLandscape){
+        position: static;
+    }
+
+}
+
+.mw-class .bottom-nav {
+    @include mq($phoneLandscape){
+        background-color: $top-nav-color;
+        display: none;
+        width: 100%;
+        height: auto;
+        .show & {
+            display: block;
+        }
+    }
+}
+
+.mw-class .main-nav {
+    background-color: transparent;
+}
+
+.mw-class .main-nav ul {
+
+    margin: 0 auto;
+    max-width: 1200px;
+
+    @include mq(em(900)){
+        margin: 0 0 0 117px;
+    }
+
+    @include mq($phoneLandscape){
+        display: block;
+        margin: 0;
+        height: auto;
+        width: 100%;
+
+        li a {
+            display: block;
+            line-height: 35px;
+            color: white;
+        }
+
+        li.dropdown {
+            display: block;
+        }
+
+        .dropdown-content {
+            display: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: transparent;
+            border-bottom: 3px solid $bcit-main-yellow-color;       
+        }
+
+        li.dropdown:hover .dropdown-content {
+            background-color: $top-nav-color;
+            width: 100%;
+            a {
+                color: white;
+                text-align:center;
+            }
+        }
+
+    }
+
+}
+
+

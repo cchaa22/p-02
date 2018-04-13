@@ -86,3 +86,45 @@
         border: none;
     }
 }
+
+// MW Styles - incorporate above
+.mw-class .top-nav {
+    @include mq($phoneLandscape){
+        display: none;
+        width: 100%;
+
+        .show & {
+            display: block;
+        }
+
+        .head-nav {
+            display: flex;
+            flex-direction: column-reverse;
+            border-bottom: none;
+
+            ul {
+                display: block;
+            }
+
+            li a {
+                display: block;
+                line-height: 38px;
+            }
+
+            .dropdown {
+                display: none;
+            }
+
+            .search-form {
+                flex: 1;
+                position: static;
+                top: 0;
+                right: 0;
+                display: block;
+                width: 100%;
+            }
+
+        }
+
+    }
+}
