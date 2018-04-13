@@ -21,6 +21,45 @@ table {
 .e-resource-table {
     background-color: $bg-table-color;
     color: $bcit-main-font-color;
+    //min-width: em(800);
+    img {
+        height: auto;
+    }
+    th, td {
+        padding: em(10);
+    }
+    @include mq(em(850)){
+        min-width: em(600);
+        font-size: em(12);
+        th, td {
+            padding: em(5);
+        }
+    }
+    @include mq($betweenTabletAndPhone){
+        min-width: em(700);
+        font-size: em(12);
+        th, td {
+            padding: em(5);
+        }
+    }
+    @include mq($phoneLandscape){
+        min-width: em(550);
+        .extras {
+            display: none;
+        }
+    }
+    @include mq($phonePortrait){
+        min-width: em(380);
+    }
+}
+
+.table-container {
+    @include mq($tabletLandscape){
+        margin-left: em(50);
+    }
+    @include mq($tabletPortrait){
+        margin-left: em(10);
+    }
 }
 
 .staff-table {

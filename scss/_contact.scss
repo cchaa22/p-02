@@ -1,5 +1,16 @@
+.contact-page-instructions {
+    @include mq($phonePortrait){
+        width: em(300);
+    }
+}
+
 .greater-contact-area {
     display: flex;
+    @include mq($phonePortrait){
+        .contact-form {
+            margin-left: em(10);
+        }
+    }
 }
 
 .contact-form {
