@@ -61,6 +61,7 @@
             font-size: em(12);
         }
     }
+
     @include mq($betweenTabletAndPhone) {
         grid-template-columns: 1fr 1fr;
         min-width: em(420);
@@ -71,6 +72,7 @@
             margin-left: em(10);
         }
     }
+    
     @include mq($phonePortrait) {
         grid-template-columns: 1fr;
         .individual-student {
