@@ -177,7 +177,6 @@
 .main-nav {
     background-color: transparent;
     flex: 1;
-    // background-color: $main-nav-color;
 
     li a, .dropbtn {
         display: inline-block;
@@ -232,7 +231,7 @@
 
 .navbar-custom .main-nav ul {
     margin: 0 auto;
-    max-width: 1200px;
+    // max-width: 1200px;
 
     @include flatten(true);
 
@@ -249,7 +248,6 @@
         margin: 0;
         height: auto;
         width: 100%;
-
         li a {
             display: block;
             line-height: 35px;

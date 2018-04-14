@@ -41,7 +41,7 @@ body {
 }
 
 .wrapper {
-    background-color: white;
+    background-color: $bcit-white-color;
     @include center;
     @include mq($phoneLandscape){
         h1{
@@ -115,7 +115,7 @@ body {
     button{
         background-color:  $calendar-panel-color; 
         border: none;
-        color: white;
+        color: $bcit-white-color;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;

@@ -39,12 +39,6 @@
             height: 24px;
         }
 
-        .hamburger-icon {
-            color: white;
-            line-height: 1;
-            font-size: 2.4em;
-        }
-
         .bar {
             display: block;
             height: $bar-height;
@@ -64,7 +58,7 @@
                 width: 100%;
                 height: $bar-height;
                 left: 0;
-                background-color: white;
+                background-color: $bcit-white-color;
                 position: absolute;
                 transition: $transition;
                 @at-root .hamburger .bar:before {

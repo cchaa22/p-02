@@ -170,7 +170,7 @@
                 let error = "Please enter a valid email address."
                 insertMessage(error, "email-input", "red")
             }
-            if(validatePhoneNum(phoneNum) == false){
+            if(validatePhoneNum(phoneNum) == false && phoneNum != ""){
                 document.getElementById("phone-num-input").innerHTML = ""
                 errors = true
                 let error = "Please enter a valid phone number."

@@ -6,11 +6,7 @@
 
     ul li a {
         text-decoration: none;
-    }
-
-    p {
-        margin-left: $margin;
-    }  
+    } 
 
     @include mq($tabletPortrait) {
         margin-left: em(75);
@@ -35,12 +31,13 @@
     flex-direction: column;
     
     h1, h2 {
-        color: white;
+        color: $bcit-white-color;
     }
 }
+
 .para p {
     text-indent: 0px;
-    margin-left: $margin;
+    // margin-left: $margin;
 }
 
 .container-custom {
@@ -93,9 +90,3 @@
     object-fit: cover;
     position: absolute;
 }
-
-
-
-
-
-

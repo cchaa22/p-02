@@ -2,9 +2,13 @@
     display: grid;
     grid-template-columns: 1fr;
     background-color: $calendar-panel-color;
-    color: white;
+    color: $bcit-white-color;
     border-radius: 10px;
     min-width: 540px;
+
+    p{
+        margin-left: $margin;
+    }
 
     .students-headers, .individual-student {
         display: grid;
@@ -12,25 +16,31 @@
 
         p{
             text-align: start;
+            margin-left: 2.5em;
+        }
+
+        &:nth-child(even) {
+            background-color: $bg-table-even-row;
         }
     }
 
     .individual-student :nth-child(3n+3) {
-        text-align: end;
+        // text-align: end;
         margin-left: 0;
         margin-right: $margin;
+        margin-left: 40px;
     }
 
     h3 {
         margin: $margin;
         color: $top-nav-hover-color;
-        text-align: center;
+        // text-align: center;
     }
     
     @include mq($tabletPortrait){
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: em(10);
-        background-color: white;
+        background-color: $bcit-white-color;
 
         .students-headers {
             display: none;
